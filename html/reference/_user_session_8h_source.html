@@ -1,0 +1,108 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>FRPL(freative program library): frpl/general/UserSession.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">FRPL(freative program library)
+   &#160;<span id="projectnumber">v1.0</span>
+   </div>
+   <div id="projectbrief">亚视代码库参考手册</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.2 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="namespaces.html"><span>命名空间</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_655979800503496c23352227f74cbe2e.html">frpl</a></li><li class="navelem"><a class="el" href="dir_ca0d5d06a82941ce30cedcd6f5153a1c.html">general</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">UserSession.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_user_session_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#ifndef FRPL_UTILS_USERSESSION_H</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define FRPL_UTILS_USERSESSION_H</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_user_manage_8h.html" title="用户管理以及权限管理相关">frpl/general/UserManage.h</a>&quot;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;windows.h&gt;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">namespace </span>frpl{</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="code" href="classfrpl_1_1_fr_user_session.html">   25</a></span>&#160;<span class="keyword">class </span><a class="code" href="classfrpl_1_1_fr_user_session.html" title="用户以及权限管理类,单例模式">FrUserSession</a></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;{</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordtype">bool</span> <span class="keyword">static</span> <a class="code" href="classfrpl_1_1_fr_user_session.html#a72e729a10002cb4f7ecdf01d6de2d21c">GlobalInit</a>();</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordtype">void</span> <span class="keyword">static</span> <a class="code" href="classfrpl_1_1_fr_user_session.html#a39afdc98a75297c4d81853228a5de56b">GlobalDestroy</a>();</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keyword">static</span> <a class="code" href="classfrpl_1_1_fr_user_session.html" title="用户以及权限管理类,单例模式">FrUserSession</a>* <a class="code" href="classfrpl_1_1_fr_user_session.html#adb5cbeba92463361dedb924fa1684ab1">GetInstance</a>();</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17d" title="错误代码">FrErrCode</a> <a class="code" href="classfrpl_1_1_fr_user_session.html#aa212426caa8a3c7c77d0b343b5da3070">AddUser</a>(QString usr, QString pwd, <span class="keywordtype">int</span> gid);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17d" title="错误代码">FrErrCode</a> <a class="code" href="classfrpl_1_1_fr_user_session.html#aa681440951b80ecf71f12a7aaf87b383">LogIn</a>(QString usr, QString pwd);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17d" title="错误代码">FrErrCode</a> <a class="code" href="classfrpl_1_1_fr_user_session.html#aeabcf3b8e403c2175cf9f9df06b8226a">LogOut</a>();</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17d" title="错误代码">FrErrCode</a> <a class="code" href="classfrpl_1_1_fr_user_session.html#a0eaa849d17a4a28020b3045d234e27a9">CurrentUser</a>(QString&amp; usr);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17d" title="错误代码">FrErrCode</a> <a class="code" href="classfrpl_1_1_fr_user_session.html#a854375f59203d1db0bc813dbd1df4d29">CurrentUserAuths</a>(vector&lt;QString&gt;&amp; auths);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17d" title="错误代码">FrErrCode</a> <a class="code" href="classfrpl_1_1_fr_user_session.html#a058743f63e438f4e59797f3d3855ca71">CurrentUserHasAuth</a>(QString auth, <span class="keywordtype">bool</span>&amp; has);</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keyword">static</span> CRITICAL_SECTION cs;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keyword">static</span> <a class="code" href="classfrpl_1_1_fr_user_session.html" title="用户以及权限管理类,单例模式">FrUserSession</a>* session;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keyword">static</span> <a class="code" href="classfrpl_1_1_fr_d_b_conn_base.html" title="数据库操作结果,弃用">FrDBConnBase</a>* conn;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keyword">static</span> <a class="code" href="classfrpl_1_1_fr_user_manage.html" title="用户以及权限管理类">FrUserManage</a>* manage;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <a class="code" href="classfrpl_1_1_fr_user_session.html" title="用户以及权限管理类,单例模式">FrUserSession</a>();</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keywordtype">bool</span> Init();</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;};</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;} <span class="comment">// namespace frpl</span></div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="preprocessor">#endif // FRPL_UTILS_USERSESSION_H</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2014年 八月 12日 星期二 16:59:03 , 为 FRPL(freative program library)使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.2
+</small></address>
+</body>
+</html>

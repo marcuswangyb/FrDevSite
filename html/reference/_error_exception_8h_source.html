@@ -1,0 +1,160 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>FRPL(freative program library): frpl/core/ErrorException.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">FRPL(freative program library)
+   &#160;<span id="projectnumber">v1.0</span>
+   </div>
+   <div id="projectbrief">亚视代码库参考手册</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.2 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="namespaces.html"><span>命名空间</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_655979800503496c23352227f74cbe2e.html">frpl</a></li><li class="navelem"><a class="el" href="dir_24c80940497756b2a27de0ae05511b27.html">core</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">ErrorException.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_error_exception_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#ifndef ERROR_EXCEPTION_H</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define ERROR_EXCEPTION_H</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;stdio.h&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">using</span> std::string;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">namespace </span>frpl{</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="code" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17d">   23</a></span>&#160;<span class="keyword">enum</span> <a class="code" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17d" title="错误代码">FrErrCode</a>{</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="code" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17dadea97def7125e3c2675474d70e3c223a">   24</a></span>&#160;    <a class="code" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17dadea97def7125e3c2675474d70e3c223a">ERR_NO</a> = 0,                     </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="comment">/* 操作系统问题*/</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="code" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17dae5ffb71dea581a6f45689dc54fbfcfd0">   27</a></span>&#160;    <a class="code" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17dae5ffb71dea581a6f45689dc54fbfcfd0">ERR_SYS_NOFILE</a> = 1000,          </div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="code" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17dad9627b4dfa8658985fdee762d5e94972">   28</a></span>&#160;    <a class="code" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17dad9627b4dfa8658985fdee762d5e94972">ERR_WAIT_TIMEOUT</a> = 1001,        </div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="code" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17da92ffba8aef1e1cbb1153c6e1217f847b">   29</a></span>&#160;    <a class="code" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17da92ffba8aef1e1cbb1153c6e1217f847b">ERR_MEM_OUTRANGE</a> = 1002,        </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="comment">/* 网络问题*/</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="code" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17daf030712b82eadffb9ed698bb08b1351b">   32</a></span>&#160;    <a class="code" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17daf030712b82eadffb9ed698bb08b1351b">ERR_NET_OFFLINE</a> = 3000,         </div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="code" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17daf00600ab96d567b698782e820da7889f">   33</a></span>&#160;    <a class="code" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17daf00600ab96d567b698782e820da7889f">ERR_UPLOAD_FAILED</a> = 3002,       </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="comment">/* 视频采集问题*/</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="code" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17da55c6ab617fa87626dd9a8c3174656744">   36</a></span>&#160;    <a class="code" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17da55c6ab617fa87626dd9a8c3174656744">ERR_CAM_OFFLINE</a> = 4000,         </div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="code" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17da6873ba4f5dd83cf129be96d4ac852333">   37</a></span>&#160;    <a class="code" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17da6873ba4f5dd83cf129be96d4ac852333">ERR_CAM_NOFILE</a> = 4001,          </div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="code" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17da790067ddb7ff295b941910f94863529b">   38</a></span>&#160;    <a class="code" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17da790067ddb7ff295b941910f94863529b">ERR_CAM_RUNFAILED</a> = 4002,       </div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="code" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17dab3852e5b61175465e65ad67c1231cd7f">   39</a></span>&#160;    <a class="code" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17dab3852e5b61175465e65ad67c1231cd7f">ERR_CAM_INITFAILED</a> = 4003,      </div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="code" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17da8d5ff938fce6535684d3f7b58add0e4d">   40</a></span>&#160;    <a class="code" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17da8d5ff938fce6535684d3f7b58add0e4d">ERR_CAM_LOGINFAILED</a> = 4004,     </div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="code" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17da590a6f2510e8a64d025f623d96447d45">   41</a></span>&#160;    <a class="code" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17da590a6f2510e8a64d025f623d96447d45">ERR_CAM_LOGOUTFAILED</a> = 4005,    </div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="code" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17dad51a8af26aa38e54cf905d1c13d7b6c5">   42</a></span>&#160;    <a class="code" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17dad51a8af26aa38e54cf905d1c13d7b6c5">ERR_CAM_STOPFAILED</a> = 4006,      </div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="code" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17dab1dfcae23a493deccb892a88d9ae5e8e">   43</a></span>&#160;    <a class="code" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17dab1dfcae23a493deccb892a88d9ae5e8e">ERR_CAM_HIKSTOPPLAY</a> = 4007,     </div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="code" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17da2e5f8dfa6be4d8cff94bc407837e82cb">   44</a></span>&#160;    <a class="code" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17da2e5f8dfa6be4d8cff94bc407837e82cb">ERR_CAM_STREAMOPEN</a> = 4008,      </div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="code" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17dafc3f8cdab0f0cc31e3ebcce40779fcd8">   45</a></span>&#160;    <a class="code" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17dafc3f8cdab0f0cc31e3ebcce40779fcd8">ERR_CAM_STARTTIMEOUT</a> = 4009,    </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="comment">/* 软件系统问题*/</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="code" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17da0029b9eb2ffec921f4665bc0e2ed446f">   48</a></span>&#160;    <a class="code" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17da0029b9eb2ffec921f4665bc0e2ed446f">ERR_IMAGE_INVALIDSIZE</a> = 5001,   </div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="code" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17da52f55b2c9870199dddf5c37c0c04c9d0">   49</a></span>&#160;    <a class="code" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17da52f55b2c9870199dddf5c37c0c04c9d0">ERR_IMAGE_WRONGSIZE</a> = 5002,     </div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="code" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17da1ccb125bcb1e6994036c74e074cdd69d">   50</a></span>&#160;    <a class="code" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17da1ccb125bcb1e6994036c74e074cdd69d">ERR_QUEUE_INVALIDSIZE</a> = 5003,   </div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="code" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17daf3399b4d305a8e2c7fcf08d32a8e37d0">   51</a></span>&#160;    <a class="code" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17daf3399b4d305a8e2c7fcf08d32a8e37d0">ERR_QUEUE_INVALIDSEM</a> = 5004,    </div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="code" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17da4f9ae2f4b00c0adfce36670d072b0588">   52</a></span>&#160;    <a class="code" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17da4f9ae2f4b00c0adfce36670d072b0588">ERR_THREAD_INIT</a> = 5005,         </div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="code" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17da2791e863cc2a139edfd443d67a939bec">   53</a></span>&#160;    <a class="code" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17da2791e863cc2a139edfd443d67a939bec">ERR_THREAD_START</a> = 5006,        </div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="code" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17da28759f46ac99c0d6cd4b649c9acfc3e3">   54</a></span>&#160;    <a class="code" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17da28759f46ac99c0d6cd4b649c9acfc3e3">ERR_THREAD_STOP</a> = 5007,         </div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="code" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17daa788c49e2e315520294632706424c8d4">   55</a></span>&#160;    <a class="code" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17daa788c49e2e315520294632706424c8d4">ERR_SYSTEM_INIT</a> = 5008,         </div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="code" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17daaf404a4218c1d043b7e4f5b7e0d60010">   56</a></span>&#160;    <a class="code" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17daaf404a4218c1d043b7e4f5b7e0d60010">ERR_SYSTEM_START</a> = 5009,        </div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="code" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17dae369858d65814132f515bf08ffad3591">   57</a></span>&#160;    <a class="code" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17dae369858d65814132f515bf08ffad3591">ERR_SYSTEM_STOP</a> = 5010,         </div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="code" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17da59a0be1288aeac194202f90f28565d4b">   58</a></span>&#160;    <a class="code" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17da59a0be1288aeac194202f90f28565d4b">ERR_THREAD_STOP_TIMEOUT</a> = 5011, </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="comment">/* 数据库问题 */</span> </div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="comment">// ERR_DB_SUCCEED = 6000,              /**&lt; 数据库操作成功 */</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="code" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17da764bd0df35717ca2a3438b707c125f5d">   62</a></span>&#160;    <a class="code" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17da764bd0df35717ca2a3438b707c125f5d">ERR_DB_FAILED_WITH_N_TIMES</a> = 6001,  </div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="code" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17dafea098ba8719f8c2d0fa6f937c4becf9">   63</a></span>&#160;    <a class="code" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17dafea098ba8719f8c2d0fa6f937c4becf9">ERR_DB_CONNECTION_ERROR</a> = 6002,     </div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="code" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17da61c8df4f1301f812b95b3b76ee2564be">   64</a></span>&#160;    <a class="code" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17da61c8df4f1301f812b95b3b76ee2564be">ERR_DB_STATEMENT_ERROR</a> = 6003,      </div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="code" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17daba62d593ff293a40001faa205fedca65">   65</a></span>&#160;    <a class="code" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17daba62d593ff293a40001faa205fedca65">ERR_DB_TRANSACTION_ERROR</a> = 6004,    </div>
+<div class="line"><a name="l00066"></a><span class="lineno"><a class="code" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17da654e8c2db361c6a1b61bd0a1711b74bf">   66</a></span>&#160;    <a class="code" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17da654e8c2db361c6a1b61bd0a1711b74bf">ERR_DB_UNKNOWN_ERROR</a> = 6005,        </div>
+<div class="line"><a name="l00067"></a><span class="lineno"><a class="code" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17daa47c947b7eb3eb58d879ec8b2f02d9ed">   67</a></span>&#160;    <a class="code" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17daa47c947b7eb3eb58d879ec8b2f02d9ed">ERR_DB_ARGUMENT_ERROR</a> = 6006,       </div>
+<div class="line"><a name="l00068"></a><span class="lineno"><a class="code" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17daa7f32a49baec9163195a410e00d04e69">   68</a></span>&#160;    <a class="code" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17daa7f32a49baec9163195a410e00d04e69">ERR_DB_DRIVER_INVALID</a> = 6007,       </div>
+<div class="line"><a name="l00069"></a><span class="lineno"><a class="code" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17daa302855eae57729f0d916fff03f1431d">   69</a></span>&#160;    <a class="code" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17daa302855eae57729f0d916fff03f1431d">ERR_DB_DATABASE_NOT_OPEN</a> = 6008,    </div>
+<div class="line"><a name="l00070"></a><span class="lineno"><a class="code" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17daa5d9cfdf62b6e1831feac54894be2365">   70</a></span>&#160;    <a class="code" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17daa5d9cfdf62b6e1831feac54894be2365">ERR_DB_FAILED</a> = 6009,               </div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="code" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17da0fdeefc404e8c0c43892a7b4fe7f7b06">   71</a></span>&#160;    <a class="code" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17da0fdeefc404e8c0c43892a7b4fe7f7b06">ERR_DB_DATABASE_ACTIVE</a> = 6010,      </div>
+<div class="line"><a name="l00072"></a><span class="lineno"><a class="code" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17dac8fe9bc3397f8265ad6a689c663af938">   72</a></span>&#160;    <a class="code" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17dac8fe9bc3397f8265ad6a689c663af938">ERR_DB_EXEC_ERROR</a> = 6011,           </div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="comment">/* 用户管理问题 */</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="comment">// ERR_USER_SUCCEED = 7000,            /**&lt; 用户登录成功 */</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno"><a class="code" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17da44506ee20f628f7534789fb9121b9bbf">   76</a></span>&#160;    <a class="code" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17da44506ee20f628f7534789fb9121b9bbf">ERR_USER_DB_ERROR</a> = 7001,           </div>
+<div class="line"><a name="l00077"></a><span class="lineno"><a class="code" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17da6897b2e8b5275060daffc022dcd1d70f">   77</a></span>&#160;    <a class="code" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17da6897b2e8b5275060daffc022dcd1d70f">ERR_USER_NO_USER</a> = 7002,            </div>
+<div class="line"><a name="l00078"></a><span class="lineno"><a class="code" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17da38d385949a9d5826a1466f54444622b0">   78</a></span>&#160;    <a class="code" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17da38d385949a9d5826a1466f54444622b0">ERR_USER_WRONG_PASSWORD</a> = 7003,     </div>
+<div class="line"><a name="l00079"></a><span class="lineno"><a class="code" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17dabc8d9dc5857adeea88e5086f36014b60">   79</a></span>&#160;    <a class="code" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17dabc8d9dc5857adeea88e5086f36014b60">ERR_USER_NOT_LOGIN</a> = 7004,          </div>
+<div class="line"><a name="l00080"></a><span class="lineno"><a class="code" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17da44abe6e794ae8d40ad24d7f54bb9ffdb">   80</a></span>&#160;    <a class="code" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17da44abe6e794ae8d40ad24d7f54bb9ffdb">ERR_USER_USER_EXISTS</a> = 7005,        </div>
+<div class="line"><a name="l00081"></a><span class="lineno"><a class="code" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17da7894d8c8e8beafca0eb5c81db0ed6ac7">   81</a></span>&#160;    <a class="code" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17da7894d8c8e8beafca0eb5c81db0ed6ac7">ERR_USER_GROUP_NO_SUCH_AUTH</a> = 7006, </div>
+<div class="line"><a name="l00082"></a><span class="lineno"><a class="code" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17dac453820236e0ef4be7776e77bfe955e3">   82</a></span>&#160;    <a class="code" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17dac453820236e0ef4be7776e77bfe955e3">ERR_USER_NO_SUCH_AUTH</a> = 7007,       </div>
+<div class="line"><a name="l00083"></a><span class="lineno"><a class="code" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17dabe7d0a53ed9fd469b6b4298f4d9ab279">   83</a></span>&#160;    <a class="code" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17dabe7d0a53ed9fd469b6b4298f4d9ab279">ERR_USER_NO_SUCH_GROUP</a> = 7008,      </div>
+<div class="line"><a name="l00084"></a><span class="lineno"><a class="code" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17dae64e72ee2af7bc5c27e290d98fae8c79">   84</a></span>&#160;    <a class="code" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17dae64e72ee2af7bc5c27e290d98fae8c79">ERR_USER_QUERY_ERROR</a> = 7009,        </div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="comment">/* 其他 */</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno"><a class="code" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17dae30f15761cf4dcec1c0e15ec1d92af7c">   87</a></span>&#160;    <a class="code" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17dae30f15761cf4dcec1c0e15ec1d92af7c">ERR_UNKNOWN</a> = 9999          </div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;};</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
+<div class="line"><a name="l00093"></a><span class="lineno"><a class="code" href="namespacefrpl.html#ae83a884bd6015fd775c259860d573816">   93</a></span>&#160;<span class="keyword">enum</span> <a class="code" href="namespacefrpl.html#ae83a884bd6015fd775c259860d573816" title="异常级别,与日志级别对应">FrExpLevel</a></div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;{</div>
+<div class="line"><a name="l00095"></a><span class="lineno"><a class="code" href="namespacefrpl.html#ae83a884bd6015fd775c259860d573816aa82a5aaf40c4327ada2ffd1140393024">   95</a></span>&#160;    <a class="code" href="namespacefrpl.html#ae83a884bd6015fd775c259860d573816aa82a5aaf40c4327ada2ffd1140393024">EXP_INFO</a> = 1,       </div>
+<div class="line"><a name="l00096"></a><span class="lineno"><a class="code" href="namespacefrpl.html#ae83a884bd6015fd775c259860d573816aae978eb9edb04d1a477b164e7811c8e2">   96</a></span>&#160;    <a class="code" href="namespacefrpl.html#ae83a884bd6015fd775c259860d573816aae978eb9edb04d1a477b164e7811c8e2">EXP_WARN</a> = 2,       </div>
+<div class="line"><a name="l00097"></a><span class="lineno"><a class="code" href="namespacefrpl.html#ae83a884bd6015fd775c259860d573816acd99edf309178eebad51a2aa4a61d7b6">   97</a></span>&#160;    <a class="code" href="namespacefrpl.html#ae83a884bd6015fd775c259860d573816acd99edf309178eebad51a2aa4a61d7b6">EXP_ERROR</a> = 3,      </div>
+<div class="line"><a name="l00098"></a><span class="lineno"><a class="code" href="namespacefrpl.html#ae83a884bd6015fd775c259860d573816a8335abe2fc938ba77f799717169b32cb">   98</a></span>&#160;    <a class="code" href="namespacefrpl.html#ae83a884bd6015fd775c259860d573816a8335abe2fc938ba77f799717169b32cb">EXP_FATAL</a> = 4,      </div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;};</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
+<div class="line"><a name="l00106"></a><span class="lineno"><a class="code" href="structfrpl_1_1_fr_exp_msg.html">  106</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structfrpl_1_1_fr_exp_msg.html" title="异常消息结构体.">FrExpMsg</a></div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;{</div>
+<div class="line"><a name="l00108"></a><span class="lineno"><a class="code" href="structfrpl_1_1_fr_exp_msg.html#a7835ddd12df1a421db74f3c49ba87749">  108</a></span>&#160;    <a class="code" href="namespacefrpl.html#ae83a884bd6015fd775c259860d573816" title="异常级别,与日志级别对应">FrExpLevel</a> <a class="code" href="structfrpl_1_1_fr_exp_msg.html#a7835ddd12df1a421db74f3c49ba87749">level</a>;   </div>
+<div class="line"><a name="l00109"></a><span class="lineno"><a class="code" href="structfrpl_1_1_fr_exp_msg.html#a7c112ce7ac89e2e5d4cd8b7de3f5894b">  109</a></span>&#160;    <span class="keywordtype">string</span> <a class="code" href="structfrpl_1_1_fr_exp_msg.html#a7c112ce7ac89e2e5d4cd8b7de3f5894b">content</a>;     </div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <a class="code" href="structfrpl_1_1_fr_exp_msg.html" title="异常消息结构体.">FrExpMsg</a>()</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    {</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        this-&gt;<a class="code" href="structfrpl_1_1_fr_exp_msg.html#a7835ddd12df1a421db74f3c49ba87749">level</a> = <a class="code" href="namespacefrpl.html#ae83a884bd6015fd775c259860d573816acd99edf309178eebad51a2aa4a61d7b6">EXP_ERROR</a>;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        this-&gt;<a class="code" href="structfrpl_1_1_fr_exp_msg.html#a7c112ce7ac89e2e5d4cd8b7de3f5894b">content</a> = <span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    };</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <a class="code" href="structfrpl_1_1_fr_exp_msg.html" title="异常消息结构体.">FrExpMsg</a>(<a class="code" href="namespacefrpl.html#ae83a884bd6015fd775c259860d573816" title="异常级别,与日志级别对应">FrExpLevel</a> <a class="code" href="structfrpl_1_1_fr_exp_msg.html#a7835ddd12df1a421db74f3c49ba87749">level</a>,<span class="keywordtype">string</span> <a class="code" href="structfrpl_1_1_fr_exp_msg.html#a7c112ce7ac89e2e5d4cd8b7de3f5894b">content</a>)</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    {</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        this-&gt;level = <a class="code" href="structfrpl_1_1_fr_exp_msg.html#a7835ddd12df1a421db74f3c49ba87749">level</a>;</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        this-&gt;content = <a class="code" href="structfrpl_1_1_fr_exp_msg.html#a7c112ce7ac89e2e5d4cd8b7de3f5894b">content</a>;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    };</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;};</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;} <span class="comment">// namespace frpl</span></div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="preprocessor">#endif // ERROR_EXCEPTION_H</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2014年 八月 12日 星期二 16:59:03 , 为 FRPL(freative program library)使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.2
+</small></address>
+</body>
+</html>

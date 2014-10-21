@@ -1,0 +1,805 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>FRPL(freative program library): FrUserManage类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">FRPL(freative program library)
+   &#160;<span id="projectnumber">v1.0</span>
+   </div>
+   <div id="projectbrief">亚视代码库</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.2 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="namespaces.html"><span>命名空间</span></a></li>
+      <li class="current"><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>类列表</span></a></li>
+      <li><a href="classes.html"><span>类索引</span></a></li>
+      <li><a href="hierarchy.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pro-methods">Protected 成员函数</a> &#124;
+<a href="#pro-static-methods">静态 Protected 成员函数</a> &#124;
+<a href="#pro-attribs">Protected 属性</a> &#124;
+<a href="class_fr_user_manage-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">FrUserManage类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>用户以及权限管理类  
+ <a href="class_fr_user_manage.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_user_manage_8h_source.html">UserManage.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:aae28ae07cd95d622d7d5679a1cea3c89"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_fr_user_manage.html#aae28ae07cd95d622d7d5679a1cea3c89">FrUserManage</a> (<a class="el" href="classfrpl_1_1_fr_d_b_conn_base.html">FrDBConnBase</a> *db_conn)</td></tr>
+<tr class="separator:aae28ae07cd95d622d7d5679a1cea3c89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f729e2bda1627fe91fb45af65222915"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_fr_user_manage.html#a2f729e2bda1627fe91fb45af65222915">FrUserManage</a> (<a class="el" href="classfrpl_1_1_fr_d_b_conn_base.html">FrDBConnBase</a> *db_conn, <a class="el" href="class_db_map.html">DbMap</a> map)</td></tr>
+<tr class="separator:a2f729e2bda1627fe91fb45af65222915"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a919bf42f0779dadc2b7b5d9d96498565"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_fr_user_manage.html#a919bf42f0779dadc2b7b5d9d96498565">~FrUserManage</a> ()</td></tr>
+<tr class="separator:a919bf42f0779dadc2b7b5d9d96498565"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6fd10abd785eef5a70ba7721cd4357fd"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17d">FrErrCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_fr_user_manage.html#a6fd10abd785eef5a70ba7721cd4357fd">AddUser</a> (QString usr, QString pwd, int gid)</td></tr>
+<tr class="separator:a6fd10abd785eef5a70ba7721cd4357fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9804c5f9893dac376640e97af031147"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17d">FrErrCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_fr_user_manage.html#af9804c5f9893dac376640e97af031147">LogIn</a> (QString usr, QString pwd)</td></tr>
+<tr class="separator:af9804c5f9893dac376640e97af031147"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8aa8c8dcb68ec66bc3a29437d6d134c4"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17d">FrErrCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_fr_user_manage.html#a8aa8c8dcb68ec66bc3a29437d6d134c4">LogOut</a> ()</td></tr>
+<tr class="separator:a8aa8c8dcb68ec66bc3a29437d6d134c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afeac854c186202e73f805b07088193c6"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17d">FrErrCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_fr_user_manage.html#afeac854c186202e73f805b07088193c6">CurrentUser</a> (QString &amp;usr)</td></tr>
+<tr class="separator:afeac854c186202e73f805b07088193c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ee44d174603cef7872e09add66b72de"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17d">FrErrCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_fr_user_manage.html#a9ee44d174603cef7872e09add66b72de">CurrentUserAuths</a> (vector&lt; QString &gt; &amp;auths)</td></tr>
+<tr class="separator:a9ee44d174603cef7872e09add66b72de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1cb2c13883ed44c26ed9a75b60a67358"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17d">FrErrCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_fr_user_manage.html#a1cb2c13883ed44c26ed9a75b60a67358">CurrentUserHasAuth</a> (QString auth, bool &amp;has)</td></tr>
+<tr class="separator:a1cb2c13883ed44c26ed9a75b60a67358"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected 成员函数</h2></td></tr>
+<tr class="memitem:a4a44c3dd6f37e8be04b385eef769ba12"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17d">FrErrCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_fr_user_manage.html#a4a44c3dd6f37e8be04b385eef769ba12">HasUser</a> (QString usr, bool &amp;has)</td></tr>
+<tr class="separator:a4a44c3dd6f37e8be04b385eef769ba12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa68e4b34ab9468603cc5667532969155"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17d">FrErrCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_fr_user_manage.html#aa68e4b34ab9468603cc5667532969155">HasGroup</a> (int gid, bool &amp;has)</td></tr>
+<tr class="separator:aa68e4b34ab9468603cc5667532969155"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3736dba773312bafddb0bba95c11343e"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17d">FrErrCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_fr_user_manage.html#a3736dba773312bafddb0bba95c11343e">GroupAuths</a> (int gid, vector&lt; QString &gt; &amp;auths)</td></tr>
+<tr class="separator:a3736dba773312bafddb0bba95c11343e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7db89fa2125db481acfde1f892763c8"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17d">FrErrCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_fr_user_manage.html#aa7db89fa2125db481acfde1f892763c8">UserAuths</a> (QString user, vector&lt; QString &gt; &amp;auths)</td></tr>
+<tr class="separator:aa7db89fa2125db481acfde1f892763c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af63917844e9fbd42263800f9c48cb52a"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17d">FrErrCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_fr_user_manage.html#af63917844e9fbd42263800f9c48cb52a">UserHasAuth</a> (QString user, QString auth, bool &amp;has)</td></tr>
+<tr class="separator:af63917844e9fbd42263800f9c48cb52a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9cdd003daf92c3ce23b50cd3fa4b64f4"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17d">FrErrCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_fr_user_manage.html#a9cdd003daf92c3ce23b50cd3fa4b64f4">UserGroup</a> (QString user, int &amp;gid)</td></tr>
+<tr class="separator:a9cdd003daf92c3ce23b50cd3fa4b64f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-static-methods"></a>
+静态 Protected 成员函数</h2></td></tr>
+<tr class="memitem:af565f2f316f75724f3ee0f7012109cd4"><td class="memItemLeft" align="right" valign="top">static QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_fr_user_manage.html#af565f2f316f75724f3ee0f7012109cd4">GetSalt</a> ()</td></tr>
+<tr class="separator:af565f2f316f75724f3ee0f7012109cd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:affdf10dd89b0ac2c2600c6d38f0d7538"><td class="memItemLeft" align="right" valign="top">static QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_fr_user_manage.html#affdf10dd89b0ac2c2600c6d38f0d7538">Encrypt</a> (const QString pwd, const QString salt)</td></tr>
+<tr class="separator:affdf10dd89b0ac2c2600c6d38f0d7538"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0a5e62d9003e313eabf8b98bda46c89"><td class="memItemLeft" align="right" valign="top">static vector&lt; QString &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_fr_user_manage.html#ab0a5e62d9003e313eabf8b98bda46c89">Auths</a> (QString auths)</td></tr>
+<tr class="separator:ab0a5e62d9003e313eabf8b98bda46c89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected 属性</h2></td></tr>
+<tr class="memitem:a11f0a79f7a5e82c2f18e0b702ec4a128"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a11f0a79f7a5e82c2f18e0b702ec4a128"></a>
+<a class="el" href="classfrpl_1_1_fr_d_b_conn_base.html">FrDBConnBase</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>conn</b></td></tr>
+<tr class="separator:a11f0a79f7a5e82c2f18e0b702ec4a128"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c8162adcb6538fb9191611c97bf2d1b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6c8162adcb6538fb9191611c97bf2d1b"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>current_user</b></td></tr>
+<tr class="separator:a6c8162adcb6538fb9191611c97bf2d1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a406e17dc8cbd9ec24c86f9d964e46346"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a406e17dc8cbd9ec24c86f9d964e46346"></a>
+<a class="el" href="class_db_map.html">DbMap</a>&#160;</td><td class="memItemRight" valign="bottom"><b>dbmap</b></td></tr>
+<tr class="separator:a406e17dc8cbd9ec24c86f9d964e46346"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>用户以及权限管理类 </p>
+<p>用户和权限信息通过数据库（目前为mysql数据库）保存 <br/>
+ 权限是与用户组绑定的，每个用户组的auths字段包含该用户组的权限，该字段由一系列的权限名连接组成，权限名之间通过','分隔 <br/>
+ 用户的密码由密文存在password字段，该密文是经过密码明文连接该用户的salt字符串后经过SHA1算法得到的二进制串的Base64表示 <br/>
+ 每个用户的salt字段都是随机的8位大写英文字母，如"AESOUNCH" <br/>
+ </p>
+<dl class="section author"><dt>作者</dt><dd>lws </dd></dl>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a class="anchor" id="aae28ae07cd95d622d7d5679a1cea3c89"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">FrUserManage::FrUserManage </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classfrpl_1_1_fr_d_b_conn_base.html">FrDBConnBase</a> *&#160;</td>
+          <td class="paramname"><em>db_conn</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>构造函数，使用默认的数据库名映射表 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">db_conn</td><td>数据库连接，该连接在对象FrUserManage析构时不销毁 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a2f729e2bda1627fe91fb45af65222915"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">FrUserManage::FrUserManage </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classfrpl_1_1_fr_d_b_conn_base.html">FrDBConnBase</a> *&#160;</td>
+          <td class="paramname"><em>db_conn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_db_map.html">DbMap</a>&#160;</td>
+          <td class="paramname"><em>map</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>构造函数 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">db_conn</td><td>数据库连接，该连接在对象FrUserManage析构时不销毁 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">map</td><td>数据库名映射表 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a919bf42f0779dadc2b7b5d9d96498565"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">FrUserManage::~FrUserManage </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>析构函数 </p>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a class="anchor" id="a6fd10abd785eef5a70ba7721cd4357fd"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17d">FrErrCode</a> FrUserManage::AddUser </td>
+          <td>(</td>
+          <td class="paramtype">QString&#160;</td>
+          <td class="paramname"><em>usr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QString&#160;</td>
+          <td class="paramname"><em>pwd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>gid</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>添加用户 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">usr</td><td>需要添加的用户名 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pwd</td><td>用户密码 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">gid</td><td>用户组id </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>操作结果状态，ERR_NO表示成功，其他表示失败代码 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ab0a5e62d9003e313eabf8b98bda46c89"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static vector&lt;QString&gt; FrUserManage::Auths </td>
+          <td>(</td>
+          <td class="paramtype">QString&#160;</td>
+          <td class="paramname"><em>auths</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>解析权限字符串得到权限向量 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">auths</td><td>待解析的权限字符串 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>解析得到的权限向量 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="afeac854c186202e73f805b07088193c6"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17d">FrErrCode</a> FrUserManage::CurrentUser </td>
+          <td>(</td>
+          <td class="paramtype">QString &amp;&#160;</td>
+          <td class="paramname"><em>usr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>查询当前用户 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">usr</td><td>查询结果 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>操作结果状态，ERR_NO表示成功，其他表示失败代码 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a9ee44d174603cef7872e09add66b72de"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17d">FrErrCode</a> FrUserManage::CurrentUserAuths </td>
+          <td>(</td>
+          <td class="paramtype">vector&lt; QString &gt; &amp;&#160;</td>
+          <td class="paramname"><em>auths</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>查询当前用户权限 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">auths</td><td>查询结果 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>操作结果状态，ERR_NO表示成功，其他表示失败代码 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a1cb2c13883ed44c26ed9a75b60a67358"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17d">FrErrCode</a> FrUserManage::CurrentUserHasAuth </td>
+          <td>(</td>
+          <td class="paramtype">QString&#160;</td>
+          <td class="paramname"><em>auth</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool &amp;&#160;</td>
+          <td class="paramname"><em>has</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>查询当前用户是否具有某一权限 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">auth</td><td>待查权限 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">has</td><td>查询结果 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>操作结果状态，ERR_NO表示成功，其他表示失败代码 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="affdf10dd89b0ac2c2600c6d38f0d7538"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static QString FrUserManage::Encrypt </td>
+          <td>(</td>
+          <td class="paramtype">const QString&#160;</td>
+          <td class="paramname"><em>pwd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString&#160;</td>
+          <td class="paramname"><em>salt</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>加密密码明文 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pwd</td><td>待加密的密码明文 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">salt</td><td>加密用到的salt字符串 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>加密后得到的密码密文 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="af565f2f316f75724f3ee0f7012109cd4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static QString FrUserManage::GetSalt </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>获取一个salt字符串，该字符串为随机生成的8位大写字符字符串 </p>
+<dl class="section return"><dt>返回</dt><dd>生成的随机salt字符串 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a3736dba773312bafddb0bba95c11343e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17d">FrErrCode</a> FrUserManage::GroupAuths </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>gid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">vector&lt; QString &gt; &amp;&#160;</td>
+          <td class="paramname"><em>auths</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>查询用户组权限 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">gid</td><td>用户组id </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">auths</td><td>查询结果 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>操作结果状态，ERR_NO表示成功，其他表示失败代码 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aa68e4b34ab9468603cc5667532969155"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17d">FrErrCode</a> FrUserManage::HasGroup </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>gid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool &amp;&#160;</td>
+          <td class="paramname"><em>has</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>查询指定用户是否已经存在 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">usr</td><td>需要查询的用户 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">has</td><td>查询结果保存地址 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>操作结果状态，ERR_NO表示成功，其他表示失败代码 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a4a44c3dd6f37e8be04b385eef769ba12"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17d">FrErrCode</a> FrUserManage::HasUser </td>
+          <td>(</td>
+          <td class="paramtype">QString&#160;</td>
+          <td class="paramname"><em>usr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool &amp;&#160;</td>
+          <td class="paramname"><em>has</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>查询指定用户是否已经存在 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">usr</td><td>需要查询的用户 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">has</td><td>查询结果保存地址 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>操作结果状态，ERR_NO表示成功，其他表示失败代码 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="af9804c5f9893dac376640e97af031147"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17d">FrErrCode</a> FrUserManage::LogIn </td>
+          <td>(</td>
+          <td class="paramtype">QString&#160;</td>
+          <td class="paramname"><em>usr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QString&#160;</td>
+          <td class="paramname"><em>pwd</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>用户登录 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">usr</td><td>用户名 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pwd</td><td>用户密码 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>操作结果状态，ERR_NO表示成功，其他表示失败代码 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a8aa8c8dcb68ec66bc3a29437d6d134c4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17d">FrErrCode</a> FrUserManage::LogOut </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>用户登出 </p>
+<dl class="section return"><dt>返回</dt><dd>操作结果状态，ERR_NO表示成功，其他表示失败代码 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aa7db89fa2125db481acfde1f892763c8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17d">FrErrCode</a> FrUserManage::UserAuths </td>
+          <td>(</td>
+          <td class="paramtype">QString&#160;</td>
+          <td class="paramname"><em>user</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">vector&lt; QString &gt; &amp;&#160;</td>
+          <td class="paramname"><em>auths</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>查询用户权限 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">user</td><td>用户名 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">auths</td><td>查询结果 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>操作结果状态，ERR_NO表示成功，其他表示失败代码 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a9cdd003daf92c3ce23b50cd3fa4b64f4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17d">FrErrCode</a> FrUserManage::UserGroup </td>
+          <td>(</td>
+          <td class="paramtype">QString&#160;</td>
+          <td class="paramname"><em>user</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int &amp;&#160;</td>
+          <td class="paramname"><em>gid</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>查询用户所属用户组 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">user</td><td>用户名 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">gid</td><td>查询结果 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>操作结果状态，ERR_NO表示成功，其他表示失败代码 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="af63917844e9fbd42263800f9c48cb52a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17d">FrErrCode</a> FrUserManage::UserHasAuth </td>
+          <td>(</td>
+          <td class="paramtype">QString&#160;</td>
+          <td class="paramname"><em>user</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QString&#160;</td>
+          <td class="paramname"><em>auth</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool &amp;&#160;</td>
+          <td class="paramname"><em>has</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>查询用户是否具有某一权限 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">user</td><td>用户名 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">auth</td><td>待查权限 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">has</td><td>查询结果 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>操作结果状态，ERR_NO表示成功，其他表示失败代码 </dd></dl>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>20140520/include/frpl/general/<a class="el" href="_user_manage_8h_source.html">UserManage.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2014年 八月 12日 星期二 15:58:25 , 为 FRPL(freative program library)使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.2
+</small></address>
+</body>
+</html>

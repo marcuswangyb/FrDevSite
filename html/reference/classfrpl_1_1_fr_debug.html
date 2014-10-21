@@ -1,0 +1,180 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>FRPL(freative program library): frpl::FrDebug类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">FRPL(freative program library)
+   &#160;<span id="projectnumber">v1.0</span>
+   </div>
+   <div id="projectbrief">亚视代码库参考手册</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.2 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="namespaces.html"><span>命名空间</span></a></li>
+      <li class="current"><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>类列表</span></a></li>
+      <li><a href="classes.html"><span>类索引</span></a></li>
+      <li><a href="hierarchy.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacefrpl.html">frpl</a></li><li class="navelem"><a class="el" href="classfrpl_1_1_fr_debug.html">FrDebug</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#signals">信号</a> &#124;
+<a href="#pub-static-methods">静态 Public 成员函数</a> &#124;
+<a href="classfrpl_1_1_fr_debug-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">frpl::FrDebug类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>全局调试器,单例模式  
+ <a href="classfrpl_1_1_fr_debug.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_debugger_8h_source.html">Debugger.h</a>&gt;</code></p>
+<div class="dynheader">
+类 frpl::FrDebug 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="classfrpl_1_1_fr_debug.png" usemap="#frpl::FrDebug_map" alt=""/>
+  <map id="frpl::FrDebug_map" name="frpl::FrDebug_map">
+</map>
+ </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="signals"></a>
+信号</h2></td></tr>
+<tr class="memitem:ad79a27a079bfe3d102c87b9287349b25"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrpl_1_1_fr_debug.html#ad79a27a079bfe3d102c87b9287349b25">sendDebugMsg</a> (const QString &amp;arg)</td></tr>
+<tr class="separator:ad79a27a079bfe3d102c87b9287349b25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+静态 Public 成员函数</h2></td></tr>
+<tr class="memitem:a25bad1ffce755102a8d876df91155016"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a25bad1ffce755102a8d876df91155016"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>Printf</b> (const char *format,...)</td></tr>
+<tr class="separator:a25bad1ffce755102a8d876df91155016"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f9731b601cdd3a9bcee16e3aee53b5f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6f9731b601cdd3a9bcee16e3aee53b5f"></a>
+static <a class="el" href="classfrpl_1_1_fr_debug.html">FrDebug</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetInstance</b> ()</td></tr>
+<tr class="separator:a6f9731b601cdd3a9bcee16e3aee53b5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3351ed55b0bb5db910ba7075b563d742"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrpl_1_1_fr_debug.html#a3351ed55b0bb5db910ba7075b563d742">GlobalInit</a> ()</td></tr>
+<tr class="separator:a3351ed55b0bb5db910ba7075b563d742"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad944cca30fdb6b016a8e8709727b2821"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrpl_1_1_fr_debug.html#ad944cca30fdb6b016a8e8709727b2821">GlobalDestroy</a> ()</td></tr>
+<tr class="separator:ad944cca30fdb6b016a8e8709727b2821"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>全局调试器,单例模式 </p>
+<p>多线程安全。使用示例： 程序启动 <a class="el" href="classfrpl_1_1_fr_debug.html#a3351ed55b0bb5db910ba7075b563d742">FrDebug::GlobalInit()</a>; 运行中打印输出 FrDebug::Printf("%d",count); 程序结束 <a class="el" href="classfrpl_1_1_fr_debug.html#ad944cca30fdb6b016a8e8709727b2821">FrDebug::GlobalDestroy()</a>; </p>
+</div><h2 class="groupheader">成员函数说明</h2>
+<a class="anchor" id="ad944cca30fdb6b016a8e8709727b2821"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void frpl::FrDebug::GlobalDestroy </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>全局析构，仅执行一次 </p>
+
+</div>
+</div>
+<a class="anchor" id="a3351ed55b0bb5db910ba7075b563d742"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void frpl::FrDebug::GlobalInit </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>全局初始化，仅执行一次 </p>
+
+</div>
+</div>
+<a class="anchor" id="ad79a27a079bfe3d102c87b9287349b25"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void frpl::FrDebug::sendDebugMsg </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>arg</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>发出QString消息，一般用于外部绑定至显示控件上 </p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>frpl/general/<a class="el" href="_debugger_8h_source.html">Debugger.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2014年 八月 12日 星期二 16:59:04 , 为 FRPL(freative program library)使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.2
+</small></address>
+</body>
+</html>

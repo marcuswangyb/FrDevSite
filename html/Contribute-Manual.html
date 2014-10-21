@@ -1,0 +1,149 @@
+<html>
+<head>
+  <title>Evernote Export</title>
+  <basefont face="微软雅黑" size="2" />
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <meta name="exporter-version" content="Evernote Windows/272236; Windows/6.1.7601 Service Pack 1;"/>
+  <style>
+    body, td {
+      font-family: 微软雅黑;
+      font-size: 10pt;
+    }
+  </style>
+</head>
+<body>
+<a name="6407"/>
+
+<div><div lang="v2" style="line-height:1.6;"><del style="position:relative;display:block"></del><div style="line-height: 1.6; font-family: Helvetica Neue, Arial, Hiragino Sans GB, STHeiti, Microsoft YaHei, WenQuanYi Micro Hei, SimSun, Song, sans-serif;"><h3 style="font-family: inherit; font-weight: bold; line-height: 1.1; color: inherit; margin-top: 0px; margin-bottom: 20px; font-size: 24px;">FRPL Contribute Manual(建设者手册)</h3>
+<h4 style="font-family: inherit; font-weight: bold; line-height: 1.1; color: inherit; margin-top: 25px; margin-bottom: 15px; font-size: 18px;">1.目录结构</h4>
+<table style="border-collapse: collapse; border-spacing: 0; margin-bottom: 20px;">
+<thead style="margin-top: 0px;">
+<tr style="margin-top: 0px;">
+<th style="text-align: left; padding: 8px; line-height: 20px; vertical-align: top; border: 1px solid #DDD; margin-top: 0px;">目录</th>
+<th style="text-align: left; padding: 8px; line-height: 20px; vertical-align: top; border: 1px solid #DDD;">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr style="margin-top: 0px;">
+<td style="text-align: left; padding: 8px; line-height: 20px; vertical-align: top; border: 1px solid #DDD; margin-top: 0px;">3rdparty</td>
+<td style="text-align: left; padding: 8px; line-height: 20px; vertical-align: top; border: 1px solid #DDD;">第三方库的include,lib,dll</td>
+</tr>
+<tr>
+<td style="text-align: left; padding: 8px; line-height: 20px; vertical-align: top; border: 1px solid #DDD; margin-top: 0px;">build</td>
+<td style="text-align: left; padding: 8px; line-height: 20px; vertical-align: top; border: 1px solid #DDD;">代码库发布版，包含include,lib,src</td>
+</tr>
+<tr>
+<td style="text-align: left; padding: 8px; line-height: 20px; vertical-align: top; border: 1px solid #DDD; margin-top: 0px;">FRPLCore</td>
+<td style="text-align: left; padding: 8px; line-height: 20px; vertical-align: top; border: 1px solid #DDD;">Core包的构建工程</td>
+</tr>
+<tr>
+<td style="text-align: left; padding: 8px; line-height: 20px; vertical-align: top; border: 1px solid #DDD; margin-top: 0px;">FRPLGeneral</td>
+<td style="text-align: left; padding: 8px; line-height: 20px; vertical-align: top; border: 1px solid #DDD;">General包的构建工程</td>
+</tr>
+<tr>
+<td style="text-align: left; padding: 8px; line-height: 20px; vertical-align: top; border: 1px solid #DDD; margin-top: 0px;">FRPLUtils</td>
+<td style="text-align: left; padding: 8px; line-height: 20px; vertical-align: top; border: 1px solid #DDD;">Utils包的构建工程</td>
+</tr>
+<tr>
+<td style="text-align: left; padding: 8px; line-height: 20px; vertical-align: top; border: 1px solid #DDD; margin-top: 0px;">FRPLVideoacq</td>
+<td style="text-align: left; padding: 8px; line-height: 20px; vertical-align: top; border: 1px solid #DDD;">Videoacq包的构建工程</td>
+</tr>
+<tr>
+<td style="text-align: left; padding: 8px; line-height: 20px; vertical-align: top; border: 1px solid #DDD; margin-top: 0px;">FRPLViews</td>
+<td style="text-align: left; padding: 8px; line-height: 20px; vertical-align: top; border: 1px solid #DDD;">Views包的构建工程</td>
+</tr>
+<tr>
+<td style="text-align: left; padding: 8px; line-height: 20px; vertical-align: top; border: 1px solid #DDD; margin-top: 0px;">copy_build.py</td>
+<td style="text-align: left; padding: 8px; line-height: 20px; vertical-align: top; border: 1px solid #DDD;">自动更新build内文件工具</td>
+</tr>
+</tbody>
+</table>
+<h4 style="font-family: inherit; font-weight: bold; line-height: 1.1; color: inherit; margin-top: 25px; margin-bottom: 15px; font-size: 18px;">2.工程详解</h4>
+<h5 style="font-family: inherit; font-weight: bold; line-height: 1.1; color: inherit; margin-top: 25px; margin-bottom: 15px; font-size: 14px;">1）工程目录说明</h5>
+<p style="margin: 0 0 10px; line-height: 1.6; white-space: pre-wrap; word-wrap: break-word;">每个构建工程即为一个vs2010解决方案(*.sln)，其中包含若干个子工程，以FRPLCore为例<br style="margin-top: 0px;"/>| - FRPLCore<br/>    | - FRPLCore, 为Core包的开发和测试工程<br/>        | - exinclude, 外部库头文件目录，大部分外部库都会保存在上一层3rdparty目录中，这里仅存放该工程所用到的库，例如单元测试库<br/>        | - exlib, 外部库lib目录<br/>        | - include, 头文件目录，包含所有会被外部调用的头文件<br/>        | - src, 源代码目录，包含.cpp和内部.h(不会被外部调用)<br/>        | - test, 测试文件目录<br/>        | - etc, 配置文件目录，videoacq会涉及<br/>        | - res, 资源文件目录，views会涉及<br/>    | - FRPLCoreStatic, 为Core包的构建静态库工程,工程内无子目录（所有文件从FRPLCore中引用）<br/>    | - FRPLCoreApp, 为Core包的静态库应用工程(frpl_core的头文件和lib从build中取)<br/>        | - 一些测试用的cpp</p>
+<h5 style="font-family: inherit; font-weight: bold; line-height: 1.1; color: inherit; margin-top: 25px; margin-bottom: 15px; font-size: 14px;">2）工程配置说明</h5>
+<ul style="margin-top: 0; margin-bottom: 10px; line-height: 1.6;">
+<li style="line-height: 1.6; margin-top: 0px;">新建包</li>
+</ul>
+<p style="margin: 0 0 10px; line-height: 1.6; white-space: pre-wrap; word-wrap: break-word;">建立新解决方案时，勾选Create directory for solution</p>
+<ul style="margin-top: 0; margin-bottom: 10px; line-height: 1.6;">
+<li style="line-height: 1.6; margin-top: 0px;">新建子工程 - 无后缀工程</li>
+</ul>
+<p style="margin: 0 0 10px; line-height: 1.6; white-space: pre-wrap; word-wrap: break-word;">project类型-&gt;空工程<br style="margin-top: 0px;"/>all config-&gt;multi-Byte<br/>all config-&gt;include director     .\include;.\exinclude;<br/>all config-&gt;lib director         .\exlib<br/>添加gtest库</p>
+<p style="margin: 0 0 10px; line-height: 1.6; white-space: pre-wrap; word-wrap: break-word;">工程filter设定：如图，源代码放置在src目录下，测试文件放置在test目录下，main.cpp与src目录平级</p>
+<p style="margin: 0 0 10px; line-height: 1.6; white-space: pre-wrap; word-wrap: break-word;"><img src="Evernote.enex_files/.工程filter结构.jpg" type="image/jpeg" alt="Alt text" longdesc="./工程filter结构.jpg" style="border: 0; margin-top: 0px; max-width: 100%;"/></p>
+<ul style="margin-top: 0; margin-bottom: 10px; line-height: 1.6;">
+<li style="line-height: 1.6; margin-top: 0px;">新建子工程 - Static工程</li>
+</ul>
+<p style="margin: 0 0 10px; line-height: 1.6; white-space: pre-wrap; word-wrap: break-word;">project类型-&gt;staticlib,不用precompiled header<br style="margin-top: 0px;"/>all config-&gt;multi-Byte</p>
+<p style="margin: 0 0 10px; line-height: 1.6; white-space: pre-wrap; word-wrap: break-word;">修改target名：<br style="margin-top: 0px;"/>release版FRPLCore应修改target名为frpl_core.lib<br/>debug版应在.lib前加d,即frpl_cored.lib</p>
+<ul style="margin-top: 0; margin-bottom: 10px; line-height: 1.6;">
+<li style="line-height: 1.6; margin-top: 0px;">新建子工程 - App工程</li>
+</ul>
+<p style="margin: 0 0 10px; line-height: 1.6; white-space: pre-wrap; word-wrap: break-word;">project类型-&gt;空工程<br style="margin-top: 0px;"/>all config-&gt;multi-Byte<br/>all config-&gt;include director     ....\build\xxx<br/>all config-&gt;lib director         ....\build\xxx</p>
+<h4 style="font-family: inherit; font-weight: bold; line-height: 1.1; color: inherit; margin-top: 25px; margin-bottom: 15px; font-size: 18px;">3.编码规范</h4>
+<p style="margin: 0 0 10px; line-height: 1.6; white-space: pre-wrap; word-wrap: break-word;">代码库编写优先符合通用的代码规范，FRPL规范定义了一些更细致的要求，为前者的继承文档。</p>
+<h5 style="font-family: inherit; font-weight: bold; line-height: 1.1; color: inherit; margin-top: 25px; margin-bottom: 15px; font-size: 14px;">1）公司通用c++代码规范</h5>
+<p style="margin: 0 0 10px; line-height: 1.6; white-space: pre-wrap; word-wrap: break-word;"><a href="http://192.168.1.86/dev/res/code-guide.pdf" style="background: transparent; margin-top: 0px;" target="_blank">查看文档</a> </p>
+<h5 style="font-family: inherit; font-weight: bold; line-height: 1.1; color: inherit; margin-top: 25px; margin-bottom: 15px; font-size: 14px;">2）FRPL代码规范</h5>
+<ul style="margin-top: 0; margin-bottom: 10px; line-height: 1.6;">
+<li style="line-height: 1.6; margin-top: 0px;">文件与目录</li>
+</ul>
+<p style="margin: 0 0 10px; line-height: 1.6; white-space: pre-wrap; word-wrap: break-word;">与通用规范一致，目录用小写字母+下划线，文件用大驼峰法</p>
+<p style="margin: 0 0 10px; line-height: 1.6; white-space: pre-wrap; word-wrap: break-word;">在每个包中应有一个包含全部头文件的文件，例如core_all.h，仅该文件采用与目录相同的命名方式</p>
+<p style="margin: 0 0 10px; line-height: 1.6; white-space: pre-wrap; word-wrap: break-word;">测试代码应位于test文件夹,命名为xxx_Test.h, xxx_Test.cpp</p>
+<p style="margin: 0 0 10px; line-height: 1.6; white-space: pre-wrap; word-wrap: break-word;">以面向对象方式组织结构，一个文件中仅含有同一个模块（可以有多个类组成）</p>
+<ul style="margin-top: 0; margin-bottom: 10px; line-height: 1.6;">
+<li style="line-height: 1.6; margin-top: 0px;">命名</li>
+</ul>
+<p style="margin: 0 0 10px; line-height: 1.6; white-space: pre-wrap; word-wrap: break-word;">所有类均以Fr开头</p>
+<p style="margin: 0 0 10px; line-height: 1.6; white-space: pre-wrap; word-wrap: break-word;">所有代码均位于命名空间frpl中，例如</p>
+<pre style="overflow: initial; font-family: Menlo, Monaco, Consolas, Courier New, monospace; font-size: 14px; display: block; padding: 0; margin: 0 0 10px; line-height: 1.6; word-break: break-all; word-wrap: break-word; color: #333333; background-color: #f5f5f5; border: none; border-radius: 0; white-space: pre-wrap;"><code style="font-family: Menlo, Monaco, Consolas, Courier New, monospace; font-size: inherit; padding: 1em; color: #f8f8f2; background-color: transparent; white-space: pre-wrap; border-radius: 0; display: block; background: #23241f; margin-top: 0px;"><span style="color: #F92672; margin-top: 0px;">namespace</span> frpl{
+
+<span style="color: #F92672;">class</span> FrXXX()
+{
+    xxxxx;
+}
+
+} <span style="color: #75715e;">// namespace frpl</span>
+</code></pre>
+<ul style="margin-top: 0; margin-bottom: 10px; line-height: 1.6;">
+<li style="line-height: 1.6; margin-top: 0px;">注释</li>
+</ul>
+<p style="margin: 0 0 10px; line-height: 1.6; white-space: pre-wrap; word-wrap: break-word;">严格按照1）中注释要求，对所有公开的文件、类、函数、变量进行注释<br style="margin-top: 0px;"/>该注释用于自动生成文档，因此要严格注意格式</p>
+<h4 style="font-family: inherit; font-weight: bold; line-height: 1.1; color: inherit; margin-top: 25px; margin-bottom: 15px; font-size: 18px;">4.开发流程</h4>
+<h5 style="font-family: inherit; font-weight: bold; line-height: 1.1; color: inherit; margin-top: 25px; margin-bottom: 15px; font-size: 14px;">1）检出代码</h5>
+<p style="margin: 0 0 10px; line-height: 1.6; white-space: pre-wrap; word-wrap: break-word;">checkout全部代码至本地 <a href="https://192.168.1.86/svn/RepositoryFRPL/ProgramLibary/trunk/ProgramLibary" style="background: transparent; margin-top: 0px;" target="_blank">https://192.168.1.86/svn/RepositoryFRPL/ProgramLibary/trunk/ProgramLibary</a></p>
+<p style="margin: 0 0 10px; line-height: 1.6; white-space: pre-wrap; word-wrap: break-word;">进入计划开发的包目录，例如FRPLCore。<br style="margin-top: 0px;"/>打开FRPLCore.sln，开始进行代码的修改或增加</p>
+<h5 style="font-family: inherit; font-weight: bold; line-height: 1.1; color: inherit; margin-top: 25px; margin-bottom: 15px; font-size: 14px;">2）svn开发分支约定</h5>
+<p style="margin: 0 0 10px; line-height: 1.6; white-space: pre-wrap; word-wrap: break-word;">svn内分为trunk,branches,tags,backup三个目录</p>
+<ul style="margin-top: 0; margin-bottom: 10px; line-height: 1.6;">
+<li style="line-height: 1.6; margin-top: 0px;"><p style="margin: 0 0 10px; line-height: 1.6; white-space: pre-wrap; word-wrap: break-word; margin-top: 0px;">开发新功能,修改常规bug<br style="margin-top: 0px;"/>建立新的branches分支：从trunk copy至 branches/新分支名<br/>分支命名为：包名_功能点名_日期<br/>eg: core_newthreads_20140926<br/>开发过程中一直向此分支提交<br/>开发完成后与trunk合并，该分支移动至backup(待删除)</p>
+</li>
+<li style="line-height: 1.6;"><p style="margin: 0 0 10px; line-height: 1.6; white-space: pre-wrap; word-wrap: break-word; margin-top: 0px;">里程碑标记tag<br style="margin-top: 0px;"/>在trunk已达到完成所有功能开发，达到可发布的状态后，将其标记一个tag：<br/>从trunk copy至 tags/新版本名<br/>版本命名：frpl_版本号<br/>eg: frpl_1.0<br/>一般情况下tags目录下的代码属于稳定版，不能进行修改。后续新增的功能均不更新入此版本。只有在hotfix情形下例外</p>
+</li>
+<li style="line-height: 1.6;"><p style="margin: 0 0 10px; line-height: 1.6; white-space: pre-wrap; word-wrap: break-word; margin-top: 0px;">紧急修复bug(hotfix)<br style="margin-top: 0px;"/>当软件发布后，发生严重bug，必须第一时间修复时，启用hotfix机制<br/>可直接checkout tags下代码，修改commit，发布<br/>注意：hotfix后要在trunk同时进行修改，保证bug不会重复出现</p>
+</li>
+</ul>
+<h5 style="font-family: inherit; font-weight: bold; line-height: 1.1; color: inherit; margin-top: 25px; margin-bottom: 15px; font-size: 14px;">3）测试代码编写</h5>
+<p style="margin: 0 0 10px; line-height: 1.6; white-space: pre-wrap; word-wrap: break-word;">每个模块必须编写测试代码，且所有的测试代码都要保存在test目录下，模块名_Test.cpp中</p>
+<p style="margin: 0 0 10px; line-height: 1.6; white-space: pre-wrap; word-wrap: break-word;">测试代码分为两种：<br style="margin-top: 0px;"/>1.开发测试，用于验证功能完成，可以比较随意。但开发完成后一定要保留，且不能放在main.cpp中。<br/>2.单元测试，详细的验证各个测试条件是否通过。需要编写测试用例。<br/>   使用google的gtest单元测试框架进行开发，<a href="http://code.google.com/p/googletest/" style="background: transparent;" target="_blank">gtest官网</a></p>
+<p style="margin: 0 0 10px; line-height: 1.6; white-space: pre-wrap; word-wrap: break-word;">一般的，在_Test.cpp中增加<br style="margin-top: 0px;"/>// ############### dev test ############### 和<br/>// ############### unit test ###############<br/>来区分开发测试和单元测试</p>
+<h5 style="font-family: inherit; font-weight: bold; line-height: 1.1; color: inherit; margin-top: 25px; margin-bottom: 15px; font-size: 14px;">4）特殊模块开发过程</h5>
+<blockquote style="padding: 15px 20px; margin: 0 0 15px 0; font-size: 14px; border-left: 5px solid #ddd; background-color: rgba(102, 128, 153, 0.05);">
+<p style="margin: 0 0 10px; line-height: 1.6; font-size: 14px; font-weight: 300; white-space: pre-wrap; word-wrap: break-word; margin-top: 0px;"><strong style="font-weight: bold; margin-top: 0px;"> 开发新视频采集库的过程 </strong></p>
+<p style="margin: 0 0 10px; line-height: 1.6; font-size: 14px; font-weight: 300; white-space: pre-wrap; word-wrap: break-word;"><strong style="font-weight: bold; margin-top: 0px;">1.开发新的Videoacq派生类及相应测试</strong><br/>需编写VideoAcqXXX.h, VideoAcqXXX.cpp, VideoAcqXXX_Test.cpp</p>
+<p style="margin: 0 0 10px; margin-bottom: 0; line-height: 1.6; font-size: 14px; font-weight: 300; white-space: pre-wrap; word-wrap: break-word;"><strong style="font-weight: bold; margin-top: 0px;">2.修改文件VAFactory.h和VAFactory.cpp中内容</strong><br/>1)enum FrVideoAcqType增加项<br/>2)函数FrVideoAcqThread::FrVideoAcqThread中switch增加项<br/>3)函数FrVAFactory::Create中switch增加项<br/>3)LoadConfig函数增加新分支</p>
+</blockquote><h4 style="font-family: inherit; font-weight: bold; line-height: 1.1; color: inherit; margin-top: 25px; margin-bottom: 15px; font-size: 18px;">5.发布流程</h4>
+<h5 style="font-family: inherit; font-weight: bold; line-height: 1.1; color: inherit; margin-top: 25px; margin-bottom: 15px; font-size: 14px;">1）提交、(如有冲突)合并svn版本</h5>
+<blockquote style="padding: 15px 20px; margin: 0 0 15px 0; font-size: 14px; border-left: 5px solid #ddd; background-color: rgba(102, 128, 153, 0.05);">
+<p style="margin: 0 0 10px; line-height: 1.6; font-size: 14px; font-weight: 300; white-space: pre-wrap; word-wrap: break-word; margin-top: 0px;"><strong style="font-weight: bold; margin-top: 0px;">提交svn的良好习惯</strong></p>
+<p style="margin: 0 0 10px; margin-bottom: 0; line-height: 1.6; font-size: 14px; font-weight: 300; white-space: pre-wrap; word-wrap: break-word;"><strong style="font-weight: bold; margin-top: 0px;">1.在本地运行测试</strong>。先保证你完成的代码可以编译，并且能通过所有的单元测试。<br/><strong style="font-weight: bold;">2.检出最新的代码</strong>。从版本控制系统中更新代码到最新版本，再编译和运行测试，验证你的代码是否和其他人的代码产生冲突。<br/><strong style="font-weight: bold;">3.提交代码</strong></p>
+</blockquote><h5 style="font-family: inherit; font-weight: bold; line-height: 1.1; color: inherit; margin-top: 25px; margin-bottom: 15px; font-size: 14px;">2）运行自动文档生成脚本</h5>
+<p style="margin: 0 0 10px; line-height: 1.6; white-space: pre-wrap; word-wrap: break-word;">目前暂无，由管理人员手工生成文档</p>
+<h5 style="font-family: inherit; font-weight: bold; line-height: 1.1; color: inherit; margin-top: 25px; margin-bottom: 15px; font-size: 14px;">3）运行自动发布脚本</h5>
+<p style="margin: 0 0 10px; line-height: 1.6; white-space: pre-wrap; word-wrap: break-word;">copy_build.py 该脚本查找各个包内的.h, .cpp, .lib文件，将其复制如build目录中</p>
+<h5 style="font-family: inherit; font-weight: bold; line-height: 1.1; color: inherit; margin-top: 25px; margin-bottom: 15px; font-size: 14px;">4）添加第三方依赖库</h5>
+<p style="margin: 0 0 10px; line-height: 1.6; white-space: pre-wrap; word-wrap: break-word;">如最新修改内容会添加新的依赖库，则需在3rdparty目录中添加该库的.h, .lib, .dll</p>
+</div><center style="display:none">%23%23%23%20FRPL%20Contribute%20Manual%28%u5EFA%u8BBE%u8005%u624B%u518C%29%0A%23%23%23%23%201.%u76EE%u5F55%u7ED3%u6784%0A%0A%7C%20%u76EE%u5F55%20%20%20%20%20%20%7C%20%20%20%20%20%u8BF4%u660E%20%7C%0A%7C%20%3A--------%20%7C%20%3A--------%7C%20%0A%7C%203rdparty%20%20%7C%20%u7B2C%u4E09%u65B9%u5E93%u7684include%2Clib%2Cdll%20%7C%0A%7C%20build%20%20%20%20%20%7C%20%u4EE3%u7801%u5E93%u53D1%u5E03%u7248%uFF0C%u5305%u542Binclude%2Clib%2Csrc%20%7C%0A%7C%20FRPLCore%20%20%7C%20Core%u5305%u7684%u6784%u5EFA%u5DE5%u7A0B%20%7C%0A%7C%20FRPLGeneral%20%20%7C%20General%u5305%u7684%u6784%u5EFA%u5DE5%u7A0B%20%7C%0A%7C%20FRPLUtils%20%20%7C%20Utils%u5305%u7684%u6784%u5EFA%u5DE5%u7A0B%20%7C%0A%7C%20FRPLVideoacq%20%20%7C%20Videoacq%u5305%u7684%u6784%u5EFA%u5DE5%u7A0B%20%7C%0A%7C%20FRPLViews%20%20%7C%20Views%u5305%u7684%u6784%u5EFA%u5DE5%u7A0B%20%7C%0A%7C%20copy_build.py%20%20%7C%20%u81EA%u52A8%u66F4%u65B0build%u5185%u6587%u4EF6%u5DE5%u5177%20%7C%0A%0A%23%23%23%23%202.%u5DE5%u7A0B%u8BE6%u89E3%0A%23%23%23%23%23%201%uFF09%u5DE5%u7A0B%u76EE%u5F55%u8BF4%u660E%0A%u6BCF%u4E2A%u6784%u5EFA%u5DE5%u7A0B%u5373%u4E3A%u4E00%u4E2Avs2010%u89E3%u51B3%u65B9%u6848%28*.sln%29%uFF0C%u5176%u4E2D%u5305%u542B%u82E5%u5E72%u4E2A%u5B50%u5DE5%u7A0B%uFF0C%u4EE5FRPLCore%u4E3A%u4F8B%0A%7C%20-%20FRPLCore%0A%20%20%20%20%7C%20-%20FRPLCore%2C%20%u4E3ACore%u5305%u7684%u5F00%u53D1%u548C%u6D4B%u8BD5%u5DE5%u7A0B%0A%20%20%20%20%20%20%20%20%7C%20-%20exinclude%2C%20%u5916%u90E8%u5E93%u5934%u6587%u4EF6%u76EE%u5F55%uFF0C%u5927%u90E8%u5206%u5916%u90E8%u5E93%u90FD%u4F1A%u4FDD%u5B58%u5728%u4E0A%u4E00%u5C423rdparty%u76EE%u5F55%u4E2D%uFF0C%u8FD9%u91CC%u4EC5%u5B58%u653E%u8BE5%u5DE5%u7A0B%u6240%u7528%u5230%u7684%u5E93%uFF0C%u4F8B%u5982%u5355%u5143%u6D4B%u8BD5%u5E93%0A%20%20%20%20%20%20%20%20%7C%20-%20exlib%2C%20%u5916%u90E8%u5E93lib%u76EE%u5F55%0A%20%20%20%20%20%20%20%20%7C%20-%20include%2C%20%u5934%u6587%u4EF6%u76EE%u5F55%uFF0C%u5305%u542B%u6240%u6709%u4F1A%u88AB%u5916%u90E8%u8C03%u7528%u7684%u5934%u6587%u4EF6%0A%20%20%20%20%20%20%20%20%7C%20-%20src%2C%20%u6E90%u4EE3%u7801%u76EE%u5F55%uFF0C%u5305%u542B.cpp%u548C%u5185%u90E8.h%28%u4E0D%u4F1A%u88AB%u5916%u90E8%u8C03%u7528%29%0A%20%20%20%20%20%20%20%20%7C%20-%20test%2C%20%u6D4B%u8BD5%u6587%u4EF6%u76EE%u5F55%0A%20%20%20%20%20%20%20%20%7C%20-%20etc%2C%20%u914D%u7F6E%u6587%u4EF6%u76EE%u5F55%uFF0Cvideoacq%u4F1A%u6D89%u53CA%0A%20%20%20%20%20%20%20%20%7C%20-%20res%2C%20%u8D44%u6E90%u6587%u4EF6%u76EE%u5F55%uFF0Cviews%u4F1A%u6D89%u53CA%0A%20%20%20%20%7C%20-%20FRPLCoreStatic%2C%20%u4E3ACore%u5305%u7684%u6784%u5EFA%u9759%u6001%u5E93%u5DE5%u7A0B%2C%u5DE5%u7A0B%u5185%u65E0%u5B50%u76EE%u5F55%uFF08%u6240%u6709%u6587%u4EF6%u4ECEFRPLCore%u4E2D%u5F15%u7528%uFF09%0A%20%20%20%20%7C%20-%20FRPLCoreApp%2C%20%u4E3ACore%u5305%u7684%u9759%u6001%u5E93%u5E94%u7528%u5DE5%u7A0B%28frpl_core%u7684%u5934%u6587%u4EF6%u548Clib%u4ECEbuild%u4E2D%u53D6%29%0A%20%20%20%20%20%20%20%20%7C%20-%20%u4E00%u4E9B%u6D4B%u8BD5%u7528%u7684cpp%0A%0A%23%23%23%23%23%202%uFF09%u5DE5%u7A0B%u914D%u7F6E%u8BF4%u660E%0A-%20%u65B0%u5EFA%u5305%0A%0A%u5EFA%u7ACB%u65B0%u89E3%u51B3%u65B9%u6848%u65F6%uFF0C%u52FE%u9009Create%20directory%20for%20solution%0A%0A-%20%u65B0%u5EFA%u5B50%u5DE5%u7A0B%20-%20%u65E0%u540E%u7F00%u5DE5%u7A0B%0A%0Aproject%u7C7B%u578B-%3E%u7A7A%u5DE5%u7A0B%0Aall%20config-%3Emulti-Byte%0Aall%20config-%3Einclude%20director%20%20%20%20%20.%5Cinclude%3B.%5Cexinclude%3B%0Aall%20config-%3Elib%20director%20%20%20%20%20%20%20%20%20.%5Cexlib%0A%u6DFB%u52A0gtest%u5E93%0A%0A%u5DE5%u7A0Bfilter%u8BBE%u5B9A%uFF1A%u5982%u56FE%uFF0C%u6E90%u4EE3%u7801%u653E%u7F6E%u5728src%u76EE%u5F55%u4E0B%uFF0C%u6D4B%u8BD5%u6587%u4EF6%u653E%u7F6E%u5728test%u76EE%u5F55%u4E0B%uFF0Cmain.cpp%u4E0Esrc%u76EE%u5F55%u5E73%u7EA7%0A%0A%21%5BAlt%20text%5D%28./%u5DE5%u7A0Bfilter%u7ED3%u6784.jpg%29%0A%0A-%20%u65B0%u5EFA%u5B50%u5DE5%u7A0B%20-%20Static%u5DE5%u7A0B%0A%0Aproject%u7C7B%u578B-%3Estaticlib%2C%u4E0D%u7528precompiled%20header%0Aall%20config-%3Emulti-Byte%0A%0A%u4FEE%u6539target%u540D%uFF1A%0Arelease%u7248FRPLCore%u5E94%u4FEE%u6539target%u540D%u4E3Afrpl_core.lib%0Adebug%u7248%u5E94%u5728.lib%u524D%u52A0d%2C%u5373frpl_cored.lib%0A%0A-%20%u65B0%u5EFA%u5B50%u5DE5%u7A0B%20-%20App%u5DE5%u7A0B%0A%0Aproject%u7C7B%u578B-%3E%u7A7A%u5DE5%u7A0B%0Aall%20config-%3Emulti-Byte%0Aall%20config-%3Einclude%20director%20%20%20%20%20..%5C..%5Cbuild%5Cxxx%0Aall%20config-%3Elib%20director%20%20%20%20%20%20%20%20%20..%5C..%5Cbuild%5Cxxx%0A%0A%23%23%23%23%203.%u7F16%u7801%u89C4%u8303%0A%u4EE3%u7801%u5E93%u7F16%u5199%u4F18%u5148%u7B26%u5408%u901A%u7528%u7684%u4EE3%u7801%u89C4%u8303%uFF0CFRPL%u89C4%u8303%u5B9A%u4E49%u4E86%u4E00%u4E9B%u66F4%u7EC6%u81F4%u7684%u8981%u6C42%uFF0C%u4E3A%u524D%u8005%u7684%u7EE7%u627F%u6587%u6863%u3002%0A%23%23%23%23%23%201%uFF09%u516C%u53F8%u901A%u7528c++%u4EE3%u7801%u89C4%u8303%0A%5B%u67E5%u770B%u6587%u6863%5D%28192.168.1.86/dev/res/code-guide.pdf%29%20%0A%0A%23%23%23%23%23%202%uFF09FRPL%u4EE3%u7801%u89C4%u8303%0A-%20%u6587%u4EF6%u4E0E%u76EE%u5F55%0A%0A%u4E0E%u901A%u7528%u89C4%u8303%u4E00%u81F4%uFF0C%u76EE%u5F55%u7528%u5C0F%u5199%u5B57%u6BCD+%u4E0B%u5212%u7EBF%uFF0C%u6587%u4EF6%u7528%u5927%u9A7C%u5CF0%u6CD5%0A%0A%u5728%u6BCF%u4E2A%u5305%u4E2D%u5E94%u6709%u4E00%u4E2A%u5305%u542B%u5168%u90E8%u5934%u6587%u4EF6%u7684%u6587%u4EF6%uFF0C%u4F8B%u5982core_all.h%uFF0C%u4EC5%u8BE5%u6587%u4EF6%u91C7%u7528%u4E0E%u76EE%u5F55%u76F8%u540C%u7684%u547D%u540D%u65B9%u5F0F%0A%0A%u6D4B%u8BD5%u4EE3%u7801%u5E94%u4F4D%u4E8Etest%u6587%u4EF6%u5939%2C%u547D%u540D%u4E3Axxx_Test.h%2C%20xxx_Test.cpp%0A%0A%u4EE5%u9762%u5411%u5BF9%u8C61%u65B9%u5F0F%u7EC4%u7EC7%u7ED3%u6784%uFF0C%u4E00%u4E2A%u6587%u4EF6%u4E2D%u4EC5%u542B%u6709%u540C%u4E00%u4E2A%u6A21%u5757%uFF08%u53EF%u4EE5%u6709%u591A%u4E2A%u7C7B%u7EC4%u6210%uFF09%0A%0A-%20%u547D%u540D%0A%0A%u6240%u6709%u7C7B%u5747%u4EE5Fr%u5F00%u5934%0A%0A%u6240%u6709%u4EE3%u7801%u5747%u4F4D%u4E8E%u547D%u540D%u7A7A%u95F4frpl%u4E2D%uFF0C%u4F8B%u5982%0A%60%60%60%20cpp%0Anamespace%20frpl%7B%0A%0Aclass%20FrXXX%28%29%0A%7B%0A%20%20%20%20xxxxx%3B%0A%7D%0A%0A%7D%20//%20namespace%20frpl%0A%60%60%60%0A-%20%u6CE8%u91CA%0A%0A%u4E25%u683C%u6309%u71671%uFF09%u4E2D%u6CE8%u91CA%u8981%u6C42%uFF0C%u5BF9%u6240%u6709%u516C%u5F00%u7684%u6587%u4EF6%u3001%u7C7B%u3001%u51FD%u6570%u3001%u53D8%u91CF%u8FDB%u884C%u6CE8%u91CA%0A%u8BE5%u6CE8%u91CA%u7528%u4E8E%u81EA%u52A8%u751F%u6210%u6587%u6863%uFF0C%u56E0%u6B64%u8981%u4E25%u683C%u6CE8%u610F%u683C%u5F0F%0A%0A%23%23%23%23%204.%u5F00%u53D1%u6D41%u7A0B%0A%23%23%23%23%23%201%uFF09%u68C0%u51FA%u4EE3%u7801%0A%0Acheckout%u5168%u90E8%u4EE3%u7801%u81F3%u672C%u5730%20https%3A//192.168.1.86/svn/RepositoryFRPL/ProgramLibary/trunk/ProgramLibary%0A%0A%u8FDB%u5165%u8BA1%u5212%u5F00%u53D1%u7684%u5305%u76EE%u5F55%uFF0C%u4F8B%u5982FRPLCore%u3002%0A%u6253%u5F00FRPLCore.sln%uFF0C%u5F00%u59CB%u8FDB%u884C%u4EE3%u7801%u7684%u4FEE%u6539%u6216%u589E%u52A0%0A%23%23%23%23%23%202%uFF09svn%u5F00%u53D1%u5206%u652F%u7EA6%u5B9A%0Asvn%u5185%u5206%u4E3Atrunk%2Cbranches%2Ctags%2Cbackup%u4E09%u4E2A%u76EE%u5F55%0A%0A-%20%u5F00%u53D1%u65B0%u529F%u80FD%2C%u4FEE%u6539%u5E38%u89C4bug%0A%u5EFA%u7ACB%u65B0%u7684branches%u5206%u652F%uFF1A%u4ECEtrunk%20copy%u81F3%20branches/%u65B0%u5206%u652F%u540D%0A%u5206%u652F%u547D%u540D%u4E3A%uFF1A%u5305%u540D%5C_%u529F%u80FD%u70B9%u540D%5C_%u65E5%u671F%20%0Aeg%3A%20core%5C_newthreads%5C_20140926%20%0A%u5F00%u53D1%u8FC7%u7A0B%u4E2D%u4E00%u76F4%u5411%u6B64%u5206%u652F%u63D0%u4EA4%0A%u5F00%u53D1%u5B8C%u6210%u540E%u4E0Etrunk%u5408%u5E76%uFF0C%u8BE5%u5206%u652F%u79FB%u52A8%u81F3backup%28%u5F85%u5220%u9664%29%0A%0A-%20%u91CC%u7A0B%u7891%u6807%u8BB0tag%0A%u5728trunk%u5DF2%u8FBE%u5230%u5B8C%u6210%u6240%u6709%u529F%u80FD%u5F00%u53D1%uFF0C%u8FBE%u5230%u53EF%u53D1%u5E03%u7684%u72B6%u6001%u540E%uFF0C%u5C06%u5176%u6807%u8BB0%u4E00%u4E2Atag%uFF1A%0A%u4ECEtrunk%20copy%u81F3%20tags/%u65B0%u7248%u672C%u540D%0A%u7248%u672C%u547D%u540D%uFF1Afrpl_%u7248%u672C%u53F7%0Aeg%3A%20frpl_1.0%0A%u4E00%u822C%u60C5%u51B5%u4E0Btags%u76EE%u5F55%u4E0B%u7684%u4EE3%u7801%u5C5E%u4E8E%u7A33%u5B9A%u7248%uFF0C%u4E0D%u80FD%u8FDB%u884C%u4FEE%u6539%u3002%u540E%u7EED%u65B0%u589E%u7684%u529F%u80FD%u5747%u4E0D%u66F4%u65B0%u5165%u6B64%u7248%u672C%u3002%u53EA%u6709%u5728hotfix%u60C5%u5F62%u4E0B%u4F8B%u5916%0A%0A-%20%u7D27%u6025%u4FEE%u590Dbug%28hotfix%29%0A%u5F53%u8F6F%u4EF6%u53D1%u5E03%u540E%uFF0C%u53D1%u751F%u4E25%u91CDbug%uFF0C%u5FC5%u987B%u7B2C%u4E00%u65F6%u95F4%u4FEE%u590D%u65F6%uFF0C%u542F%u7528hotfix%u673A%u5236%0A%u53EF%u76F4%u63A5checkout%20tags%u4E0B%u4EE3%u7801%uFF0C%u4FEE%u6539commit%uFF0C%u53D1%u5E03%0A%u6CE8%u610F%uFF1Ahotfix%u540E%u8981%u5728trunk%u540C%u65F6%u8FDB%u884C%u4FEE%u6539%uFF0C%u4FDD%u8BC1bug%u4E0D%u4F1A%u91CD%u590D%u51FA%u73B0%0A%0A%0A%23%23%23%23%23%203%uFF09%u6D4B%u8BD5%u4EE3%u7801%u7F16%u5199%0A%0A%u6BCF%u4E2A%u6A21%u5757%u5FC5%u987B%u7F16%u5199%u6D4B%u8BD5%u4EE3%u7801%uFF0C%u4E14%u6240%u6709%u7684%u6D4B%u8BD5%u4EE3%u7801%u90FD%u8981%u4FDD%u5B58%u5728test%u76EE%u5F55%u4E0B%uFF0C%u6A21%u5757%u540D_Test.cpp%u4E2D%0A%0A%u6D4B%u8BD5%u4EE3%u7801%u5206%u4E3A%u4E24%u79CD%uFF1A%0A1.%u5F00%u53D1%u6D4B%u8BD5%uFF0C%u7528%u4E8E%u9A8C%u8BC1%u529F%u80FD%u5B8C%u6210%uFF0C%u53EF%u4EE5%u6BD4%u8F83%u968F%u610F%u3002%u4F46%u5F00%u53D1%u5B8C%u6210%u540E%u4E00%u5B9A%u8981%u4FDD%u7559%uFF0C%u4E14%u4E0D%u80FD%u653E%u5728main.cpp%u4E2D%u3002%0A2.%u5355%u5143%u6D4B%u8BD5%uFF0C%u8BE6%u7EC6%u7684%u9A8C%u8BC1%u5404%u4E2A%u6D4B%u8BD5%u6761%u4EF6%u662F%u5426%u901A%u8FC7%u3002%u9700%u8981%u7F16%u5199%u6D4B%u8BD5%u7528%u4F8B%u3002%0A%20%20%20%u4F7F%u7528google%u7684gtest%u5355%u5143%u6D4B%u8BD5%u6846%u67B6%u8FDB%u884C%u5F00%u53D1%uFF0C%5Bgtest%u5B98%u7F51%5D%28http%3A//code.google.com/p/googletest/%29%0A%0A%u4E00%u822C%u7684%uFF0C%u5728_Test.cpp%u4E2D%u589E%u52A0%0A//%20%23%23%23%23%23%23%23%23%23%23%23%23%23%23%23%20dev%20test%20%23%23%23%23%23%23%23%23%23%23%23%23%23%23%23%20%u548C%0A//%20%23%23%23%23%23%23%23%23%23%23%23%23%23%23%23%20unit%20test%20%23%23%23%23%23%23%23%23%23%23%23%23%23%23%23%20%0A%u6765%u533A%u5206%u5F00%u53D1%u6D4B%u8BD5%u548C%u5355%u5143%u6D4B%u8BD5%0A%0A%23%23%23%23%23%204%uFF09%u7279%u6B8A%u6A21%u5757%u5F00%u53D1%u8FC7%u7A0B%0A%3E%20**%20%u5F00%u53D1%u65B0%u89C6%u9891%u91C7%u96C6%u5E93%u7684%u8FC7%u7A0B%20**%0A%0A%3E%20**1.%u5F00%u53D1%u65B0%u7684Videoacq%u6D3E%u751F%u7C7B%u53CA%u76F8%u5E94%u6D4B%u8BD5**%0A%3E%20%u9700%u7F16%u5199VideoAcqXXX.h%2C%20VideoAcqXXX.cpp%2C%20VideoAcqXXX_Test.cpp%0A%3E%20%0A%3E%20**2.%u4FEE%u6539%u6587%u4EF6VAFactory.h%u548CVAFactory.cpp%u4E2D%u5185%u5BB9**%0A1%29enum%20FrVideoAcqType%u589E%u52A0%u9879%0A2%29%u51FD%u6570FrVideoAcqThread%3A%3AFrVideoAcqThread%u4E2Dswitch%u589E%u52A0%u9879%0A3%29%u51FD%u6570FrVAFactory%3A%3ACreate%u4E2Dswitch%u589E%u52A0%u9879%0A3%29LoadConfig%u51FD%u6570%u589E%u52A0%u65B0%u5206%u652F%0A%0A%23%23%23%23%205.%u53D1%u5E03%u6D41%u7A0B%0A%23%23%23%23%23%201%uFF09%u63D0%u4EA4%u3001%28%u5982%u6709%u51B2%u7A81%29%u5408%u5E76svn%u7248%u672C%0A%3E%20**%u63D0%u4EA4svn%u7684%u826F%u597D%u4E60%u60EF**%0A%0A%3E**1.%u5728%u672C%u5730%u8FD0%u884C%u6D4B%u8BD5**%u3002%u5148%u4FDD%u8BC1%u4F60%u5B8C%u6210%u7684%u4EE3%u7801%u53EF%u4EE5%u7F16%u8BD1%uFF0C%u5E76%u4E14%u80FD%u901A%u8FC7%u6240%u6709%u7684%u5355%u5143%u6D4B%u8BD5%u3002%0A**2.%u68C0%u51FA%u6700%u65B0%u7684%u4EE3%u7801**%u3002%u4ECE%u7248%u672C%u63A7%u5236%u7CFB%u7EDF%u4E2D%u66F4%u65B0%u4EE3%u7801%u5230%u6700%u65B0%u7248%u672C%uFF0C%u518D%u7F16%u8BD1%u548C%u8FD0%u884C%u6D4B%u8BD5%uFF0C%u9A8C%u8BC1%u4F60%u7684%u4EE3%u7801%u662F%u5426%u548C%u5176%u4ED6%u4EBA%u7684%u4EE3%u7801%u4EA7%u751F%u51B2%u7A81%u3002%0A**3.%u63D0%u4EA4%u4EE3%u7801**%0A%0A%23%23%23%23%23%202%uFF09%u8FD0%u884C%u81EA%u52A8%u6587%u6863%u751F%u6210%u811A%u672C%0A%u76EE%u524D%u6682%u65E0%uFF0C%u7531%u7BA1%u7406%u4EBA%u5458%u624B%u5DE5%u751F%u6210%u6587%u6863%0A%23%23%23%23%23%203%uFF09%u8FD0%u884C%u81EA%u52A8%u53D1%u5E03%u811A%u672C%0Acopy_build.py%20%u8BE5%u811A%u672C%u67E5%u627E%u5404%u4E2A%u5305%u5185%u7684.h%2C%20.cpp%2C%20.lib%u6587%u4EF6%uFF0C%u5C06%u5176%u590D%u5236%u5982build%u76EE%u5F55%u4E2D%0A%23%23%23%23%23%204%uFF09%u6DFB%u52A0%u7B2C%u4E09%u65B9%u4F9D%u8D56%u5E93%0A%u5982%u6700%u65B0%u4FEE%u6539%u5185%u5BB9%u4F1A%u6DFB%u52A0%u65B0%u7684%u4F9D%u8D56%u5E93%uFF0C%u5219%u9700%u57283rdparty%u76EE%u5F55%u4E2D%u6DFB%u52A0%u8BE5%u5E93%u7684.h%2C%20.lib%2C%20.dll%0A%0A</center><br/></div>
+</div></body></html> 

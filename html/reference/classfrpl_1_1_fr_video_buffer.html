@@ -1,0 +1,516 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>FRPL(freative program library): frpl::FrVideoBuffer类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">FRPL(freative program library)
+   &#160;<span id="projectnumber">v1.0</span>
+   </div>
+   <div id="projectbrief">亚视代码库参考手册</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.2 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="namespaces.html"><span>命名空间</span></a></li>
+      <li class="current"><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>类列表</span></a></li>
+      <li><a href="classes.html"><span>类索引</span></a></li>
+      <li><a href="hierarchy.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacefrpl.html">frpl</a></li><li class="navelem"><a class="el" href="classfrpl_1_1_fr_video_buffer.html">FrVideoBuffer</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-attribs">Public 属性</a> &#124;
+<a href="#pro-attribs">Protected 属性</a> &#124;
+<a href="classfrpl_1_1_fr_video_buffer-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">frpl::FrVideoBuffer类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>视频帧缓冲队列  
+ <a href="classfrpl_1_1_fr_video_buffer.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_video_buffer_base_8h_source.html">VideoBufferBase.h</a>&gt;</code></p>
+<div class="dynheader">
+类 frpl::FrVideoBuffer 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="classfrpl_1_1_fr_video_buffer.png" usemap="#frpl::FrVideoBuffer_map" alt=""/>
+  <map id="frpl::FrVideoBuffer_map" name="frpl::FrVideoBuffer_map">
+<area href="classfrpl_1_1_fr_video_buffer_base.html" title="视频帧缓冲队列，虚基类" alt="frpl::FrVideoBufferBase" shape="rect" coords="0,0,146,24"/>
+</map>
+ </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a2f6a40ff9c68b9ec85c544bee01de9ce"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17d">FrErrCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrpl_1_1_fr_video_buffer.html#a2f6a40ff9c68b9ec85c544bee01de9ce">CreateBuffer</a> (<a class="el" href="structfrpl_1_1_fr_video_buf_param.html">FrVideoBufParam</a> param)</td></tr>
+<tr class="separator:a2f6a40ff9c68b9ec85c544bee01de9ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae44d50ef34d8f79e93f8cc4f243163d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17d">FrErrCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrpl_1_1_fr_video_buffer.html#aae44d50ef34d8f79e93f8cc4f243163d">AddFrame</a> (IplImage *frameImg, int frameNum)</td></tr>
+<tr class="separator:aae44d50ef34d8f79e93f8cc4f243163d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5cc710a12a277f229b3b66a6ac1b302"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17d">FrErrCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrpl_1_1_fr_video_buffer.html#af5cc710a12a277f229b3b66a6ac1b302">QueryFrame</a> (IplImage *dstImg, int &amp;frameNum)</td></tr>
+<tr class="separator:af5cc710a12a277f229b3b66a6ac1b302"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33dfc6b47a751e39f2d0ed55690208f5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17d">FrErrCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrpl_1_1_fr_video_buffer.html#a33dfc6b47a751e39f2d0ed55690208f5">QueryFrameROI</a> (CvRect roi, IplImage *localImg, int &amp;frameNum)</td></tr>
+<tr class="separator:a33dfc6b47a751e39f2d0ed55690208f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95e5813ff01ce85b6f4db21b7902d702"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17d">FrErrCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrpl_1_1_fr_video_buffer.html#a95e5813ff01ce85b6f4db21b7902d702">QueryFrameMulti</a> (int semIndex, IplImage *dstImg, int &amp;frameNum)</td></tr>
+<tr class="separator:a95e5813ff01ce85b6f4db21b7902d702"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94042d37868eef29536fe86a234972d3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17d">FrErrCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrpl_1_1_fr_video_buffer.html#a94042d37868eef29536fe86a234972d3">QueryFrameROIMulti</a> (CvRect roi, int semIndex, IplImage *localImg, int &amp;frameNum)</td></tr>
+<tr class="separator:a94042d37868eef29536fe86a234972d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f51281bb9d40c80aa7692b03494d113"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrpl_1_1_fr_video_buffer.html#a9f51281bb9d40c80aa7692b03494d113">SetStatusVar</a> (volatile int *frameNum)</td></tr>
+<tr class="separator:a9f51281bb9d40c80aa7692b03494d113"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classfrpl_1_1_fr_video_buffer_base"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classfrpl_1_1_fr_video_buffer_base')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="classfrpl_1_1_fr_video_buffer_base.html">frpl::FrVideoBufferBase</a></td></tr>
+<tr class="memitem:a6a2617d7548b009f7883dd10ce690f9c inherit pub_methods_classfrpl_1_1_fr_video_buffer_base"><td class="memItemLeft" align="right" valign="top">CvSize&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrpl_1_1_fr_video_buffer_base.html#a6a2617d7548b009f7883dd10ce690f9c">GetImageSize</a> ()</td></tr>
+<tr class="separator:a6a2617d7548b009f7883dd10ce690f9c inherit pub_methods_classfrpl_1_1_fr_video_buffer_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9f611837c956f80c1dc2f51b5dbbbc0 inherit pub_methods_classfrpl_1_1_fr_video_buffer_base"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrpl_1_1_fr_video_buffer_base.html#ae9f611837c956f80c1dc2f51b5dbbbc0">GetLength</a> ()</td></tr>
+<tr class="separator:ae9f611837c956f80c1dc2f51b5dbbbc0 inherit pub_methods_classfrpl_1_1_fr_video_buffer_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86ffedb2b81222e117c9d1f5a0c3c0eb inherit pub_methods_classfrpl_1_1_fr_video_buffer_base"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrpl_1_1_fr_video_buffer_base.html#a86ffedb2b81222e117c9d1f5a0c3c0eb">GetSemCount</a> ()</td></tr>
+<tr class="separator:a86ffedb2b81222e117c9d1f5a0c3c0eb inherit pub_methods_classfrpl_1_1_fr_video_buffer_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:aee36450f90c8dc69262370e29be96897"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrpl_1_1_fr_video_buffer.html#aee36450f90c8dc69262370e29be96897">mBufferID</a></td></tr>
+<tr class="separator:aee36450f90c8dc69262370e29be96897"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected 属性</h2></td></tr>
+<tr class="memitem:acb68df1ba20ef0ca867a9a38dc885dae"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structfrpl_1_1_fr_video_image.html">FrVideoImage</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrpl_1_1_fr_video_buffer.html#acb68df1ba20ef0ca867a9a38dc885dae">mVideoData</a></td></tr>
+<tr class="separator:acb68df1ba20ef0ca867a9a38dc885dae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49c8ca18a8dbb314e421f642ab404be1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrpl_1_1_fr_video_buffer.html#a49c8ca18a8dbb314e421f642ab404be1">mTail</a></td></tr>
+<tr class="separator:a49c8ca18a8dbb314e421f642ab404be1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7cf207b7379fd29c1f1d142cc03d2ab8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrpl_1_1_fr_video_buffer.html#a7cf207b7379fd29c1f1d142cc03d2ab8">mCur</a></td></tr>
+<tr class="separator:a7cf207b7379fd29c1f1d142cc03d2ab8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15dc34dab81f6e55365e2a6d887e5413"><td class="memItemLeft" align="right" valign="top">HANDLE *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrpl_1_1_fr_video_buffer.html#a15dc34dab81f6e55365e2a6d887e5413">mSemaphores</a></td></tr>
+<tr class="separator:a15dc34dab81f6e55365e2a6d887e5413"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef34c5a82d6ce5ba05aef2e21be47b95"><td class="memItemLeft" align="right" valign="top">HANDLE&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrpl_1_1_fr_video_buffer.html#aef34c5a82d6ce5ba05aef2e21be47b95">hMutex</a></td></tr>
+<tr class="separator:aef34c5a82d6ce5ba05aef2e21be47b95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3199c10adf3e0b06be8455b48df9f054"><td class="memItemLeft" align="right" valign="top">volatile int *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrpl_1_1_fr_video_buffer.html#a3199c10adf3e0b06be8455b48df9f054">mOutFrameNum</a></td></tr>
+<tr class="separator:a3199c10adf3e0b06be8455b48df9f054"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_classfrpl_1_1_fr_video_buffer_base"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classfrpl_1_1_fr_video_buffer_base')"><img src="closed.png" alt="-"/>&#160;Protected 属性 继承自 <a class="el" href="classfrpl_1_1_fr_video_buffer_base.html">frpl::FrVideoBufferBase</a></td></tr>
+<tr class="memitem:a9e41edc239140a3c789d1ed685741be1 inherit pro_attribs_classfrpl_1_1_fr_video_buffer_base"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrpl_1_1_fr_video_buffer_base.html#a9e41edc239140a3c789d1ed685741be1">mLength</a></td></tr>
+<tr class="separator:a9e41edc239140a3c789d1ed685741be1 inherit pro_attribs_classfrpl_1_1_fr_video_buffer_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c4ff3ea6a5d81ca0b937c8e88b6f4ec inherit pro_attribs_classfrpl_1_1_fr_video_buffer_base"><td class="memItemLeft" align="right" valign="top">CvSize&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrpl_1_1_fr_video_buffer_base.html#a7c4ff3ea6a5d81ca0b937c8e88b6f4ec">mImageSz</a></td></tr>
+<tr class="separator:a7c4ff3ea6a5d81ca0b937c8e88b6f4ec inherit pro_attribs_classfrpl_1_1_fr_video_buffer_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0df0ef6dea71c37e6b5b8433a97eaee1 inherit pro_attribs_classfrpl_1_1_fr_video_buffer_base"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrpl_1_1_fr_video_buffer_base.html#a0df0ef6dea71c37e6b5b8433a97eaee1">mSemCount</a></td></tr>
+<tr class="separator:a0df0ef6dea71c37e6b5b8433a97eaee1 inherit pro_attribs_classfrpl_1_1_fr_video_buffer_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>视频帧缓冲队列 </p>
+</div><h2 class="groupheader">成员函数说明</h2>
+<a class="anchor" id="aae44d50ef34d8f79e93f8cc4f243163d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17d">FrErrCode</a> frpl::FrVideoBuffer::AddFrame </td>
+          <td>(</td>
+          <td class="paramtype">IplImage *&#160;</td>
+          <td class="paramname"><em>frameImg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>frameNum</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>插入图像,在队尾添加图像 </p>
+
+<p>实现了 <a class="el" href="classfrpl_1_1_fr_video_buffer_base.html#acce9afcad6a3b135afbb7d418a293f91">frpl::FrVideoBufferBase</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2f6a40ff9c68b9ec85c544bee01de9ce"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17d">FrErrCode</a> frpl::FrVideoBuffer::CreateBuffer </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structfrpl_1_1_fr_video_buf_param.html">FrVideoBufParam</a>&#160;</td>
+          <td class="paramname"><em>param</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>创建缓冲队列 </p>
+
+<p>实现了 <a class="el" href="classfrpl_1_1_fr_video_buffer_base.html#a80d0e699858ed7c8e938496cbc26d59c">frpl::FrVideoBufferBase</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af5cc710a12a277f229b3b66a6ac1b302"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17d">FrErrCode</a> frpl::FrVideoBuffer::QueryFrame </td>
+          <td>(</td>
+          <td class="paramtype">IplImage *&#160;</td>
+          <td class="paramname"><em>dstImg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int &amp;&#160;</td>
+          <td class="paramname"><em>frameNum</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>获取图像，得到最新添加的图像和帧号 默认会获取0号信号量 </p>
+
+<p>实现了 <a class="el" href="classfrpl_1_1_fr_video_buffer_base.html#a8d80cffaaaba0aa84af98d2c52e0447d">frpl::FrVideoBufferBase</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a95e5813ff01ce85b6f4db21b7902d702"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17d">FrErrCode</a> frpl::FrVideoBuffer::QueryFrameMulti </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>semIndex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IplImage *&#160;</td>
+          <td class="paramname"><em>dstImg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int &amp;&#160;</td>
+          <td class="paramname"><em>frameNum</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>获取图像，得到最新添加的图像和帧号,获取指定的信号量 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">semIndex</td><td>指定的信号量索引 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a33dfc6b47a751e39f2d0ed55690208f5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17d">FrErrCode</a> frpl::FrVideoBuffer::QueryFrameROI </td>
+          <td>(</td>
+          <td class="paramtype">CvRect&#160;</td>
+          <td class="paramname"><em>roi</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IplImage *&#160;</td>
+          <td class="paramname"><em>localImg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int &amp;&#160;</td>
+          <td class="paramname"><em>frameNum</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>获取图像,得到图像中指定子区域的内容，localImg需与roi大小一致 </p>
+
+</div>
+</div>
+<a class="anchor" id="a94042d37868eef29536fe86a234972d3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17d">FrErrCode</a> frpl::FrVideoBuffer::QueryFrameROIMulti </td>
+          <td>(</td>
+          <td class="paramtype">CvRect&#160;</td>
+          <td class="paramname"><em>roi</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>semIndex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IplImage *&#160;</td>
+          <td class="paramname"><em>localImg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int &amp;&#160;</td>
+          <td class="paramname"><em>frameNum</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>获取图像,得到图像中指定子区域的内容，localImg需与roi大小一致,获取指定的信号量 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">semIndex</td><td>指定的信号量索引 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a9f51281bb9d40c80aa7692b03494d113"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void frpl::FrVideoBuffer::SetStatusVar </td>
+          <td>(</td>
+          <td class="paramtype">volatile int *&#160;</td>
+          <td class="paramname"><em>frameNum</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>设置状态变量 </p>
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a class="anchor" id="aef34c5a82d6ce5ba05aef2e21be47b95"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">HANDLE frpl::FrVideoBuffer::hMutex</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>互斥锁 </p>
+
+</div>
+</div>
+<a class="anchor" id="aee36450f90c8dc69262370e29be96897"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int frpl::FrVideoBuffer::mBufferID</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>TODO（wyb）根据帧号取图像 TODO（wyb）根据帧号取一组图像 缓冲队列编号,自增 </p>
+
+</div>
+</div>
+<a class="anchor" id="a7cf207b7379fd29c1f1d142cc03d2ab8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int frpl::FrVideoBuffer::mCur</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>当前位置,指向刚刚写入图像的位置 </p>
+
+</div>
+</div>
+<a class="anchor" id="a3199c10adf3e0b06be8455b48df9f054"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">volatile int* frpl::FrVideoBuffer::mOutFrameNum</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>帧号值变量，外部地址 </p>
+
+</div>
+</div>
+<a class="anchor" id="a15dc34dab81f6e55365e2a6d887e5413"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">HANDLE* frpl::FrVideoBuffer::mSemaphores</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>帧可用信号量数组 </p>
+
+</div>
+</div>
+<a class="anchor" id="a49c8ca18a8dbb314e421f642ab404be1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int frpl::FrVideoBuffer::mTail</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>当前位置,指向即将放入图像的下一个位置 </p>
+
+</div>
+</div>
+<a class="anchor" id="acb68df1ba20ef0ca867a9a38dc885dae"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structfrpl_1_1_fr_video_image.html">FrVideoImage</a>* frpl::FrVideoBuffer::mVideoData</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>视频缓冲队列 </p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>frpl/videoacq/<a class="el" href="_video_buffer_base_8h_source.html">VideoBufferBase.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2014年 八月 12日 星期二 16:59:04 , 为 FRPL(freative program library)使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.2
+</small></address>
+</body>
+</html>

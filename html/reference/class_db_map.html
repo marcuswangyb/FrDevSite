@@ -1,0 +1,125 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>FRPL(freative program library): DbMap类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">FRPL(freative program library)
+   &#160;<span id="projectnumber">v1.0</span>
+   </div>
+   <div id="projectbrief">亚视代码库</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.2 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="namespaces.html"><span>命名空间</span></a></li>
+      <li class="current"><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>类列表</span></a></li>
+      <li><a href="classes.html"><span>类索引</span></a></li>
+      <li><a href="hierarchy.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-attribs">Public 属性</a> &#124;
+<a href="class_db_map-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">DbMap类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>数据库名称映射类 数据库应至少包含以下三个表以及其基本列： create table user(id integer not null auto_increment, user text not null, group_id integer default 0, password text not null, salt text not null, primary key(id)); user { id, user, group_id, password, salt }  
+ <a href="class_db_map.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_user_manage_8h_source.html">UserManage.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:a9556f02fee5b7c405a98615b3b002f16"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9556f02fee5b7c405a98615b3b002f16"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>user_table_name</b></td></tr>
+<tr class="separator:a9556f02fee5b7c405a98615b3b002f16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7fda5d1080b442c15fbbe8c620a5d510"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7fda5d1080b442c15fbbe8c620a5d510"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>user_id_name</b></td></tr>
+<tr class="separator:a7fda5d1080b442c15fbbe8c620a5d510"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a058d15bc6dbb82e4c5ed711e8c6e61eb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a058d15bc6dbb82e4c5ed711e8c6e61eb"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>user_user_name</b></td></tr>
+<tr class="separator:a058d15bc6dbb82e4c5ed711e8c6e61eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0605dcca9283b100c5fc88568496fe15"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0605dcca9283b100c5fc88568496fe15"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>user_group_id_name</b></td></tr>
+<tr class="separator:a0605dcca9283b100c5fc88568496fe15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94d069483616810625c3d623603ccdda"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a94d069483616810625c3d623603ccdda"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>user_password_name</b></td></tr>
+<tr class="separator:a94d069483616810625c3d623603ccdda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa33197a242cd91fccf7aca8b3e827c6d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa33197a242cd91fccf7aca8b3e827c6d"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>user_salt_name</b></td></tr>
+<tr class="separator:aa33197a242cd91fccf7aca8b3e827c6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a249dcf099cd3696fc3da024908a2b9be"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a249dcf099cd3696fc3da024908a2b9be"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>ugp_table_name</b></td></tr>
+<tr class="separator:a249dcf099cd3696fc3da024908a2b9be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39b221cd8dc84213908a4eca61032564"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a39b221cd8dc84213908a4eca61032564"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>ugp_id_name</b></td></tr>
+<tr class="separator:a39b221cd8dc84213908a4eca61032564"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa18f7e1a1b80ab85e6fd9c22c776edc8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa18f7e1a1b80ab85e6fd9c22c776edc8"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>ugp_name_name</b></td></tr>
+<tr class="separator:aa18f7e1a1b80ab85e6fd9c22c776edc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af68432ad33f4e703653ce65ed9500263"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af68432ad33f4e703653ce65ed9500263"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>ugp_auth_name</b></td></tr>
+<tr class="separator:af68432ad33f4e703653ce65ed9500263"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24d5491f704b9b5e05883937488f64aa"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a24d5491f704b9b5e05883937488f64aa"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>ugp_desc_name</b></td></tr>
+<tr class="separator:a24d5491f704b9b5e05883937488f64aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6df6036f7bed1531ac0169c24b1efa71"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6df6036f7bed1531ac0169c24b1efa71"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>auth_table_name</b></td></tr>
+<tr class="separator:a6df6036f7bed1531ac0169c24b1efa71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a0f3225cf45059b2e0f270883390248"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8a0f3225cf45059b2e0f270883390248"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>auth_id_name</b></td></tr>
+<tr class="separator:a8a0f3225cf45059b2e0f270883390248"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b98688640af52561f4088ca00bd9329"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7b98688640af52561f4088ca00bd9329"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>auth_name_name</b></td></tr>
+<tr class="separator:a7b98688640af52561f4088ca00bd9329"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f563f68a18d60f009fff2b20fc4db2f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6f563f68a18d60f009fff2b20fc4db2f"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>auth_desc_name</b></td></tr>
+<tr class="separator:a6f563f68a18d60f009fff2b20fc4db2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>数据库名称映射类 数据库应至少包含以下三个表以及其基本列： create table user(id integer not null auto_increment, user text not null, group_id integer default 0, password text not null, salt text not null, primary key(id)); user { id, user, group_id, password, salt } </p>
+<p>create table usergroup(id integer, name text, auths text, group_desc text, primary key(id)); group { id, name, auths, group_desc }</p>
+<p>create table auth(id integer, auth text, auth_desc text, primary key(id)); auth { id, auth, auth_desc }</p>
+<dl class="section author"><dt>作者</dt><dd>lws </dd></dl>
+</div><hr/>该类的文档由以下文件生成:<ul>
+<li>20140520/include/frpl/general/<a class="el" href="_user_manage_8h_source.html">UserManage.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2014年 八月 12日 星期二 15:58:25 , 为 FRPL(freative program library)使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.2
+</small></address>
+</body>
+</html>

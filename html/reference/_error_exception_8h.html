@@ -1,0 +1,166 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>FRPL(freative program library): frpl/core/ErrorException.h 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">FRPL(freative program library)
+   &#160;<span id="projectnumber">v1.0</span>
+   </div>
+   <div id="projectbrief">亚视代码库参考手册</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.2 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="namespaces.html"><span>命名空间</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_655979800503496c23352227f74cbe2e.html">frpl</a></li><li class="navelem"><a class="el" href="dir_24c80940497756b2a27de0ae05511b27.html">core</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">类</a> &#124;
+<a href="#namespaces">命名空间</a> &#124;
+<a href="#enum-members">枚举</a>  </div>
+  <div class="headertitle">
+<div class="title">ErrorException.h 文件参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>错误、异常处理相关类  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &lt;stdio.h&gt;</code><br/>
+<code>#include &lt;string&gt;</code><br/>
+</div>
+<p><a href="_error_exception_8h_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+类</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfrpl_1_1_fr_exp_msg.html">frpl::FrExpMsg</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">异常消息结构体.  <a href="structfrpl_1_1_fr_exp_msg.html#details">更多...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
+命名空间</h2></td></tr>
+<tr class="memitem:namespacefrpl"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrpl.html">frpl</a></td></tr>
+<tr class="memdesc:namespacefrpl"><td class="mdescLeft">&#160;</td><td class="mdescRight">亚视代码库 <br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+枚举</h2></td></tr>
+<tr class="memitem:ac7d1e22d112745e079cb6c53bcefd17d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17d">frpl::FrErrCode</a> { <br/>
+&#160;&#160;<a class="el" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17dadea97def7125e3c2675474d70e3c223a">frpl::ERR_NO</a> = 0, 
+<a class="el" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17dae5ffb71dea581a6f45689dc54fbfcfd0">frpl::ERR_SYS_NOFILE</a> = 1000, 
+<a class="el" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17dad9627b4dfa8658985fdee762d5e94972">frpl::ERR_WAIT_TIMEOUT</a> = 1001, 
+<a class="el" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17da92ffba8aef1e1cbb1153c6e1217f847b">frpl::ERR_MEM_OUTRANGE</a> = 1002, 
+<br/>
+&#160;&#160;<a class="el" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17daf030712b82eadffb9ed698bb08b1351b">frpl::ERR_NET_OFFLINE</a> = 3000, 
+<a class="el" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17daf00600ab96d567b698782e820da7889f">frpl::ERR_UPLOAD_FAILED</a> = 3002, 
+<a class="el" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17da55c6ab617fa87626dd9a8c3174656744">frpl::ERR_CAM_OFFLINE</a> = 4000, 
+<a class="el" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17da6873ba4f5dd83cf129be96d4ac852333">frpl::ERR_CAM_NOFILE</a> = 4001, 
+<br/>
+&#160;&#160;<a class="el" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17da790067ddb7ff295b941910f94863529b">frpl::ERR_CAM_RUNFAILED</a> = 4002, 
+<a class="el" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17dab3852e5b61175465e65ad67c1231cd7f">frpl::ERR_CAM_INITFAILED</a> = 4003, 
+<a class="el" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17da8d5ff938fce6535684d3f7b58add0e4d">frpl::ERR_CAM_LOGINFAILED</a> = 4004, 
+<a class="el" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17da590a6f2510e8a64d025f623d96447d45">frpl::ERR_CAM_LOGOUTFAILED</a> = 4005, 
+<br/>
+&#160;&#160;<a class="el" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17dad51a8af26aa38e54cf905d1c13d7b6c5">frpl::ERR_CAM_STOPFAILED</a> = 4006, 
+<a class="el" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17dab1dfcae23a493deccb892a88d9ae5e8e">frpl::ERR_CAM_HIKSTOPPLAY</a> = 4007, 
+<a class="el" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17da2e5f8dfa6be4d8cff94bc407837e82cb">frpl::ERR_CAM_STREAMOPEN</a> = 4008, 
+<a class="el" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17dafc3f8cdab0f0cc31e3ebcce40779fcd8">frpl::ERR_CAM_STARTTIMEOUT</a> = 4009, 
+<br/>
+&#160;&#160;<a class="el" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17da0029b9eb2ffec921f4665bc0e2ed446f">frpl::ERR_IMAGE_INVALIDSIZE</a> = 5001, 
+<a class="el" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17da52f55b2c9870199dddf5c37c0c04c9d0">frpl::ERR_IMAGE_WRONGSIZE</a> = 5002, 
+<a class="el" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17da1ccb125bcb1e6994036c74e074cdd69d">frpl::ERR_QUEUE_INVALIDSIZE</a> = 5003, 
+<a class="el" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17daf3399b4d305a8e2c7fcf08d32a8e37d0">frpl::ERR_QUEUE_INVALIDSEM</a> = 5004, 
+<br/>
+&#160;&#160;<a class="el" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17da4f9ae2f4b00c0adfce36670d072b0588">frpl::ERR_THREAD_INIT</a> = 5005, 
+<a class="el" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17da2791e863cc2a139edfd443d67a939bec">frpl::ERR_THREAD_START</a> = 5006, 
+<a class="el" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17da28759f46ac99c0d6cd4b649c9acfc3e3">frpl::ERR_THREAD_STOP</a> = 5007, 
+<a class="el" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17daa788c49e2e315520294632706424c8d4">frpl::ERR_SYSTEM_INIT</a> = 5008, 
+<br/>
+&#160;&#160;<a class="el" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17daaf404a4218c1d043b7e4f5b7e0d60010">frpl::ERR_SYSTEM_START</a> = 5009, 
+<a class="el" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17dae369858d65814132f515bf08ffad3591">frpl::ERR_SYSTEM_STOP</a> = 5010, 
+<a class="el" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17da59a0be1288aeac194202f90f28565d4b">frpl::ERR_THREAD_STOP_TIMEOUT</a> = 5011, 
+<a class="el" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17da764bd0df35717ca2a3438b707c125f5d">frpl::ERR_DB_FAILED_WITH_N_TIMES</a> = 6001, 
+<br/>
+&#160;&#160;<a class="el" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17dafea098ba8719f8c2d0fa6f937c4becf9">frpl::ERR_DB_CONNECTION_ERROR</a> = 6002, 
+<a class="el" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17da61c8df4f1301f812b95b3b76ee2564be">frpl::ERR_DB_STATEMENT_ERROR</a> = 6003, 
+<a class="el" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17daba62d593ff293a40001faa205fedca65">frpl::ERR_DB_TRANSACTION_ERROR</a> = 6004, 
+<a class="el" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17da654e8c2db361c6a1b61bd0a1711b74bf">frpl::ERR_DB_UNKNOWN_ERROR</a> = 6005, 
+<br/>
+&#160;&#160;<a class="el" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17daa47c947b7eb3eb58d879ec8b2f02d9ed">frpl::ERR_DB_ARGUMENT_ERROR</a> = 6006, 
+<a class="el" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17daa7f32a49baec9163195a410e00d04e69">frpl::ERR_DB_DRIVER_INVALID</a> = 6007, 
+<a class="el" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17daa302855eae57729f0d916fff03f1431d">frpl::ERR_DB_DATABASE_NOT_OPEN</a> = 6008, 
+<a class="el" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17daa5d9cfdf62b6e1831feac54894be2365">frpl::ERR_DB_FAILED</a> = 6009, 
+<br/>
+&#160;&#160;<a class="el" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17da0fdeefc404e8c0c43892a7b4fe7f7b06">frpl::ERR_DB_DATABASE_ACTIVE</a> = 6010, 
+<a class="el" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17dac8fe9bc3397f8265ad6a689c663af938">frpl::ERR_DB_EXEC_ERROR</a> = 6011, 
+<a class="el" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17da44506ee20f628f7534789fb9121b9bbf">frpl::ERR_USER_DB_ERROR</a> = 7001, 
+<a class="el" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17da6897b2e8b5275060daffc022dcd1d70f">frpl::ERR_USER_NO_USER</a> = 7002, 
+<br/>
+&#160;&#160;<a class="el" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17da38d385949a9d5826a1466f54444622b0">frpl::ERR_USER_WRONG_PASSWORD</a> = 7003, 
+<a class="el" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17dabc8d9dc5857adeea88e5086f36014b60">frpl::ERR_USER_NOT_LOGIN</a> = 7004, 
+<a class="el" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17da44abe6e794ae8d40ad24d7f54bb9ffdb">frpl::ERR_USER_USER_EXISTS</a> = 7005, 
+<a class="el" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17da7894d8c8e8beafca0eb5c81db0ed6ac7">frpl::ERR_USER_GROUP_NO_SUCH_AUTH</a> = 7006, 
+<br/>
+&#160;&#160;<a class="el" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17dac453820236e0ef4be7776e77bfe955e3">frpl::ERR_USER_NO_SUCH_AUTH</a> = 7007, 
+<a class="el" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17dabe7d0a53ed9fd469b6b4298f4d9ab279">frpl::ERR_USER_NO_SUCH_GROUP</a> = 7008, 
+<a class="el" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17dae64e72ee2af7bc5c27e290d98fae8c79">frpl::ERR_USER_QUERY_ERROR</a> = 7009, 
+<a class="el" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17dae30f15761cf4dcec1c0e15ec1d92af7c">frpl::ERR_UNKNOWN</a> = 9999
+<br/>
+ }</td></tr>
+<tr class="memdesc:ac7d1e22d112745e079cb6c53bcefd17d"><td class="mdescLeft">&#160;</td><td class="mdescRight">错误代码  <a href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17d">更多...</a><br/></td></tr>
+<tr class="separator:ac7d1e22d112745e079cb6c53bcefd17d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae83a884bd6015fd775c259860d573816"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrpl.html#ae83a884bd6015fd775c259860d573816">frpl::FrExpLevel</a> { <a class="el" href="namespacefrpl.html#ae83a884bd6015fd775c259860d573816aa82a5aaf40c4327ada2ffd1140393024">frpl::EXP_INFO</a> = 1, 
+<a class="el" href="namespacefrpl.html#ae83a884bd6015fd775c259860d573816aae978eb9edb04d1a477b164e7811c8e2">frpl::EXP_WARN</a> = 2, 
+<a class="el" href="namespacefrpl.html#ae83a884bd6015fd775c259860d573816acd99edf309178eebad51a2aa4a61d7b6">frpl::EXP_ERROR</a> = 3, 
+<a class="el" href="namespacefrpl.html#ae83a884bd6015fd775c259860d573816a8335abe2fc938ba77f799717169b32cb">frpl::EXP_FATAL</a> = 4
+ }</td></tr>
+<tr class="memdesc:ae83a884bd6015fd775c259860d573816"><td class="mdescLeft">&#160;</td><td class="mdescRight">异常级别,与日志级别对应  <a href="namespacefrpl.html#ae83a884bd6015fd775c259860d573816">更多...</a><br/></td></tr>
+<tr class="separator:ae83a884bd6015fd775c259860d573816"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>错误、异常处理相关类 </p>
+<p>Copyright (c),2014, Freative</p>
+<dl class="section author"><dt>作者</dt><dd>wyb </dd></dl>
+<dl class="section version"><dt>版本</dt><dd>v1.0 </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2014-05-20 </dd></dl>
+</div></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2014年 八月 12日 星期二 16:59:03 , 为 FRPL(freative program library)使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.2
+</small></address>
+</body>
+</html>

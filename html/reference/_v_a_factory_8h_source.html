@@ -1,0 +1,144 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>FRPL(freative program library): frpl/videoacq/VAFactory.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">FRPL(freative program library)
+   &#160;<span id="projectnumber">v1.0</span>
+   </div>
+   <div id="projectbrief">亚视代码库参考手册</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.2 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="namespaces.html"><span>命名空间</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_655979800503496c23352227f74cbe2e.html">frpl</a></li><li class="navelem"><a class="el" href="dir_655952e86f0a71d4902c07a237493131.html">videoacq</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">VAFactory.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_v_a_factory_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#ifndef FRPL_VIDEOACQ_VAFACTORY_H</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define FRPL_VIDEOACQ_VAFACTORY_H</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;map&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="core__all_8h.html" title="core库的头文件">frpl/core/core_all.h</a>&quot;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_video_acq_base_8h.html" title="视频采集基类">VideoAcqBase.h</a>&quot;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">using</span> std::map;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">namespace </span>frpl{</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="code" href="namespacefrpl.html#a1c7853273961ac926cf013870060c143">   22</a></span>&#160;<span class="keyword">enum</span> <a class="code" href="namespacefrpl.html#a1c7853273961ac926cf013870060c143" title="视频采集模块类型">FrVideoAcqType</a></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;{</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="code" href="namespacefrpl.html#a1c7853273961ac926cf013870060c143a35f92aa5756cdc8b21dd9497ace8d84a">   24</a></span>&#160;    <a class="code" href="namespacefrpl.html#a1c7853273961ac926cf013870060c143a35f92aa5756cdc8b21dd9497ace8d84a">ACQTYPE_FILE</a> = 1,        </div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="code" href="namespacefrpl.html#a1c7853273961ac926cf013870060c143acf0a0ffe92af73d52dacc68effb83278">   25</a></span>&#160;    <a class="code" href="namespacefrpl.html#a1c7853273961ac926cf013870060c143acf0a0ffe92af73d52dacc68effb83278">ACQTYPE_HIK</a> = 2,         </div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="code" href="namespacefrpl.html#a1c7853273961ac926cf013870060c143a3a5ed3271f0d84374825c12605d4a792">   26</a></span>&#160;    <a class="code" href="namespacefrpl.html#a1c7853273961ac926cf013870060c143a3a5ed3271f0d84374825c12605d4a792">ACQTYPE_AXIS</a> = 3,        </div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="code" href="namespacefrpl.html#a1c7853273961ac926cf013870060c143aced429eeb79266979ceef6e6bab3da13">   27</a></span>&#160;    <a class="code" href="namespacefrpl.html#a1c7853273961ac926cf013870060c143aced429eeb79266979ceef6e6bab3da13">ACQTYPE_AODUN</a> = 4,       </div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="code" href="namespacefrpl.html#a1c7853273961ac926cf013870060c143a8e526ba2e24a052e198d0ded93a2b5ff">   28</a></span>&#160;    <a class="code" href="namespacefrpl.html#a1c7853273961ac926cf013870060c143a8e526ba2e24a052e198d0ded93a2b5ff">ACQTYPE_RJ</a> = 5,          </div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="code" href="namespacefrpl.html#a1c7853273961ac926cf013870060c143a9e19b769a62c7db5fa2616172e0a645c">   29</a></span>&#160;    <a class="code" href="namespacefrpl.html#a1c7853273961ac926cf013870060c143a9e19b769a62c7db5fa2616172e0a645c">ACQTYPE_YS</a> = 6,          </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;};</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="code" href="classfrpl_1_1_fr_v_a_factory.html">   57</a></span>&#160;<span class="keyword">class </span><a class="code" href="classfrpl_1_1_fr_v_a_factory.html" title="视频采集工厂类">FrVAFactory</a></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;{</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <a class="code" href="classfrpl_1_1_fr_video_acq.html" title="视频采集模块基类">FrVideoAcq</a> *<a class="code" href="classfrpl_1_1_fr_v_a_factory.html#acbf7e2f20a62b7fe9a85bebf05dcad4d">Create</a>(<a class="code" href="namespacefrpl.html#a1c7853273961ac926cf013870060c143" title="视频采集模块类型">FrVideoAcqType</a> type);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keyword">static</span> map&lt;FrVideoAcqType,string&gt; <a class="code" href="classfrpl_1_1_fr_v_a_factory.html#a7581ac2538b82df6a06ffb4962f25233">GetSupportTypeList</a>();</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;};</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
+<div class="line"><a name="l00078"></a><span class="lineno"><a class="code" href="classfrpl_1_1_fr_video_acq_thread.html">   78</a></span>&#160;<span class="keyword">class </span><a class="code" href="classfrpl_1_1_fr_video_acq_thread.html" title="视频采集线程类">FrVideoAcqThread</a>:<span class="keyword">public</span> <a class="code" href="classfrpl_1_1_fr_h_thread.html" title="心跳线程">FrHThread</a></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;{</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <a class="code" href="classfrpl_1_1_fr_video_acq_thread.html#aea4d48589f0a8cdfd7099154cfab8e70">FrVideoAcqThread</a>(<a class="code" href="namespacefrpl.html#a1c7853273961ac926cf013870060c143" title="视频采集模块类型">FrVideoAcqType</a> acqType,<a class="code" href="structfrpl_1_1_fr_acq_param.html" title="视频采集模块参数">FrAcqParam</a> param);</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <a class="code" href="classfrpl_1_1_fr_video_acq_thread.html#a8b3deec9cd2d20b23da50aa964b9a9f7">~FrVideoAcqThread</a>();</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <a class="code" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17d" title="错误代码">FrErrCode</a> <a class="code" href="classfrpl_1_1_fr_video_acq_thread.html#a61249af2cceffb2b44e2262cb3bc3a64">Initialize</a>(<a class="code" href="classfrpl_1_1_fr_video_buffer.html" title="视频帧缓冲队列">FrVideoBuffer</a> *pBuffer);    </div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    DWORD <a class="code" href="classfrpl_1_1_fr_video_acq_thread.html#a71cf3eaad02f60e7d0d854830cd0cebe">ThreadMemberFunc</a>();                   </div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classfrpl_1_1_fr_video_acq_thread.html#a2445c754d78d5ce28721f9303063fac6">ThreadInitFunc</a>(<span class="keywordtype">void</span> * param);         </div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <a class="code" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17d" title="错误代码">FrErrCode</a> <a class="code" href="classfrpl_1_1_fr_video_acq_thread.html#a9bb945a27e24ff16a2618c981ba21e9d">StartThread</a>();                   </div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <a class="code" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17d" title="错误代码">FrErrCode</a> <a class="code" href="classfrpl_1_1_fr_video_acq_thread.html#a98539197062c465afaf9b918321e59e6">StopThread</a>();                     </div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classfrpl_1_1_fr_video_acq_thread.html#a75ab87a2e99f4ec4992091ad36b7c0c7">GetVideoAcqType</a>();                   </div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="classfrpl_1_1_fr_video_acq_thread.html#afb313124d2f0011daa5e088c65459dab">SetExceptionQueue</a>(<a class="code" href="classfrpl_1_1_fr_msg_queue.html">FrMsgQueue&lt;FrExpMsg&gt;</a> *expQueue);    <span class="comment">// 设置异常处理队列</span></div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;</div>
+<div class="line"><a name="l00120"></a><span class="lineno"><a class="code" href="classfrpl_1_1_fr_video_acq_thread.html#a16284887f42f005f10dd781e96ddbbe3">  120</a></span>&#160;    <a class="code" href="classfrpl_1_1_fr_video_acq.html" title="视频采集模块基类">FrVideoAcq</a> *<a class="code" href="classfrpl_1_1_fr_video_acq_thread.html#a16284887f42f005f10dd781e96ddbbe3">pVideoAcq</a>;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    <span class="keywordtype">int</span> m_acqType;                              <span class="comment">// 采集模块类型</span></div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    <a class="code" href="structfrpl_1_1_fr_acq_param.html" title="视频采集模块参数">FrAcqParam</a> m_param;                         <span class="comment">// 采集参数</span></div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    <a class="code" href="classfrpl_1_1_fr_video_buffer.html" title="视频帧缓冲队列">FrVideoBuffer</a> *m_pBuffer;                   <span class="comment">// 缓冲队列指针</span></div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <span class="keywordtype">int</span> mWaitStartTime;                         <span class="comment">// 等待启动最大时间</span></div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    <span class="keywordtype">int</span> mWaitStreamTime;                        <span class="comment">// 等待视频流最大时间</span></div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    HANDLE m_hStartEvent;                       <span class="comment">// 线程启动事件</span></div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    HANDLE m_hInitEvent;                        <span class="comment">// 线程初始化事件</span></div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    HANDLE m_hResponseEvent;                    <span class="comment">// 线程反馈事件</span></div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    <a class="code" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17d" title="错误代码">FrErrCode</a> m_nResponse;                      <span class="comment">// 线程启动、初始化、结束是否成功</span></div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> ExceptionCallBack(<a class="code" href="structfrpl_1_1_fr_exp_msg.html" title="异常消息结构体.">FrExpMsg</a> msg);    <span class="comment">// 异常回调函数</span></div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    <span class="keyword">static</span> <a class="code" href="classfrpl_1_1_fr_msg_queue.html">FrMsgQueue&lt;FrExpMsg&gt;</a> *mExpQueue;         <span class="comment">// 异常处理队列</span></div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;};</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;</div>
+<div class="line"><a name="l00160"></a><span class="lineno"><a class="code" href="classfrpl_1_1_fr_v_a_thread_factory.html">  160</a></span>&#160;<span class="keyword">class </span><a class="code" href="classfrpl_1_1_fr_v_a_thread_factory.html" title="视频采集线程工厂">FrVAThreadFactory</a></div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;{</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    <a class="code" href="classfrpl_1_1_fr_video_acq_thread.html" title="视频采集线程类">FrVideoAcqThread</a> *<a class="code" href="classfrpl_1_1_fr_v_a_thread_factory.html#aae08be235fa3fadc0f09a79c4553c896">Create</a>(<span class="keywordtype">int</span> channelIndex);</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    <a class="code" href="classfrpl_1_1_fr_video_acq_thread.html" title="视频采集线程类">FrVideoAcqThread</a> *<a class="code" href="classfrpl_1_1_fr_v_a_thread_factory.html#aae08be235fa3fadc0f09a79c4553c896">Create</a>(<span class="keywordtype">int</span> channelIndex,<span class="keywordtype">string</span> path);</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    <span class="keywordtype">bool</span> LoadConfig(<span class="keywordtype">int</span> channel,<a class="code" href="structfrpl_1_1_fr_acq_param.html" title="视频采集模块参数">FrAcqParam</a> &amp;param,<a class="code" href="namespacefrpl.html#a1c7853273961ac926cf013870060c143" title="视频采集模块类型">FrVideoAcqType</a> &amp;acqType,<span class="keywordtype">string</span> path);</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;};</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;}</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;<span class="preprocessor">#endif</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2014年 八月 12日 星期二 16:59:03 , 为 FRPL(freative program library)使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.2
+</small></address>
+</body>
+</html>

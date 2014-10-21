@@ -1,0 +1,326 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>FRPL(freative program library): frpl::FrHThread类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">FRPL(freative program library)
+   &#160;<span id="projectnumber">v1.0</span>
+   </div>
+   <div id="projectbrief">亚视代码库参考手册</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.2 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="namespaces.html"><span>命名空间</span></a></li>
+      <li class="current"><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>类列表</span></a></li>
+      <li><a href="classes.html"><span>类索引</span></a></li>
+      <li><a href="hierarchy.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacefrpl.html">frpl</a></li><li class="navelem"><a class="el" href="classfrpl_1_1_fr_h_thread.html">FrHThread</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-static-methods">静态 Public 成员函数</a> &#124;
+<a href="#pro-methods">Protected 成员函数</a> &#124;
+<a href="#pro-attribs">Protected 属性</a> &#124;
+<a href="classfrpl_1_1_fr_h_thread-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">frpl::FrHThread类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>心跳线程  
+ <a href="classfrpl_1_1_fr_h_thread.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_multi_thread_8h_source.html">MultiThread.h</a>&gt;</code></p>
+<div class="dynheader">
+类 frpl::FrHThread 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="classfrpl_1_1_fr_h_thread.png" usemap="#frpl::FrHThread_map" alt=""/>
+  <map id="frpl::FrHThread_map" name="frpl::FrHThread_map">
+<area href="classfrpl_1_1_fr_thread.html" title="线程基类(虚类)" alt="frpl::FrThread" shape="rect" coords="0,0,145,24"/>
+<area href="classfrpl_1_1_fr_video_acq_thread.html" title="视频采集线程类" alt="frpl::FrVideoAcqThread" shape="rect" coords="0,112,145,136"/>
+</map>
+ </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:aee22bc42d18f718318ea0d9083f52a07"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17d">FrErrCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrpl_1_1_fr_h_thread.html#aee22bc42d18f718318ea0d9083f52a07">StartThread</a> ()</td></tr>
+<tr class="separator:aee22bc42d18f718318ea0d9083f52a07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac837404cc6cf9c330ca8174631fba45d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrpl_1_1_fr_h_thread.html#ac837404cc6cf9c330ca8174631fba45d">SetHeartBeatVar</a> (volatile int *heartVar)</td></tr>
+<tr class="separator:ac837404cc6cf9c330ca8174631fba45d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8acb903525043011e3af8065d0604ac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrpl_1_1_fr_h_thread.html#ad8acb903525043011e3af8065d0604ac">SetHeartBeatPeriod</a> (int seconds)</td></tr>
+<tr class="separator:ad8acb903525043011e3af8065d0604ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classfrpl_1_1_fr_thread"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classfrpl_1_1_fr_thread')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="classfrpl_1_1_fr_thread.html">frpl::FrThread</a></td></tr>
+<tr class="memitem:a8f1e1fd97d8b029f20ccc762977e4204 inherit pub_methods_classfrpl_1_1_fr_thread"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17d">FrErrCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrpl_1_1_fr_thread.html#a8f1e1fd97d8b029f20ccc762977e4204">StartThread</a> ()</td></tr>
+<tr class="separator:a8f1e1fd97d8b029f20ccc762977e4204 inherit pub_methods_classfrpl_1_1_fr_thread"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2303d1905f49307e4f47d9655f741ec1 inherit pub_methods_classfrpl_1_1_fr_thread"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17d">FrErrCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrpl_1_1_fr_thread.html#a2303d1905f49307e4f47d9655f741ec1">StopThread</a> ()</td></tr>
+<tr class="separator:a2303d1905f49307e4f47d9655f741ec1 inherit pub_methods_classfrpl_1_1_fr_thread"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1fbf06d0d43f8e52b2585ea5e21d6a5d inherit pub_methods_classfrpl_1_1_fr_thread"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17d">FrErrCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrpl_1_1_fr_thread.html#a1fbf06d0d43f8e52b2585ea5e21d6a5d">StopThreadAsyn</a> ()</td></tr>
+<tr class="separator:a1fbf06d0d43f8e52b2585ea5e21d6a5d inherit pub_methods_classfrpl_1_1_fr_thread"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b770cb317523f02d356c6940819bd58 inherit pub_methods_classfrpl_1_1_fr_thread"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17d">FrErrCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrpl_1_1_fr_thread.html#a3b770cb317523f02d356c6940819bd58">StopThreadDelay</a> (DWORD dwMilliseconds)</td></tr>
+<tr class="separator:a3b770cb317523f02d356c6940819bd58 inherit pub_methods_classfrpl_1_1_fr_thread"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3764559712e9ff403c5cf289a8e9e2e inherit pub_methods_classfrpl_1_1_fr_thread"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrpl_1_1_fr_thread.html#ab3764559712e9ff403c5cf289a8e9e2e">SetPriority</a> (int priority)</td></tr>
+<tr class="separator:ab3764559712e9ff403c5cf289a8e9e2e inherit pub_methods_classfrpl_1_1_fr_thread"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+静态 Public 成员函数</h2></td></tr>
+<tr class="memitem:ad571b0ba93a384bb6d091df8175c9e6a"><td class="memItemLeft" align="right" valign="top">static DWORD WINAPI&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrpl_1_1_fr_h_thread.html#ad571b0ba93a384bb6d091df8175c9e6a">ThreadFuncHeart</a> (LPVOID param)</td></tr>
+<tr class="separator:ad571b0ba93a384bb6d091df8175c9e6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_static_methods_classfrpl_1_1_fr_thread"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_classfrpl_1_1_fr_thread')"><img src="closed.png" alt="-"/>&#160;静态 Public 成员函数 继承自 <a class="el" href="classfrpl_1_1_fr_thread.html">frpl::FrThread</a></td></tr>
+<tr class="memitem:a0dfab9e1509fe0319f7ea577e7c257c5 inherit pub_static_methods_classfrpl_1_1_fr_thread"><td class="memItemLeft" align="right" valign="top">static DWORD WINAPI&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrpl_1_1_fr_thread.html#a0dfab9e1509fe0319f7ea577e7c257c5">ThreadFunc</a> (LPVOID param)</td></tr>
+<tr class="separator:a0dfab9e1509fe0319f7ea577e7c257c5 inherit pub_static_methods_classfrpl_1_1_fr_thread"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected 成员函数</h2></td></tr>
+<tr class="memitem:ad4da8a78fae3f78c30ee566ec2e4d37e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrpl_1_1_fr_h_thread.html#ad4da8a78fae3f78c30ee566ec2e4d37e">UpdateHeartBeat</a> ()</td></tr>
+<tr class="separator:ad4da8a78fae3f78c30ee566ec2e4d37e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_classfrpl_1_1_fr_thread"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classfrpl_1_1_fr_thread')"><img src="closed.png" alt="-"/>&#160;Protected 成员函数 继承自 <a class="el" href="classfrpl_1_1_fr_thread.html">frpl::FrThread</a></td></tr>
+<tr class="memitem:ab65db89cd5041bd1af4810a5b087f826 inherit pro_methods_classfrpl_1_1_fr_thread"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrpl_1_1_fr_thread.html#ab65db89cd5041bd1af4810a5b087f826">ThreadInitFunc</a> (void *param)</td></tr>
+<tr class="separator:ab65db89cd5041bd1af4810a5b087f826 inherit pro_methods_classfrpl_1_1_fr_thread"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b062f2316b855d4311430cce0646174 inherit pro_methods_classfrpl_1_1_fr_thread"><td class="memItemLeft" align="right" valign="top">virtual DWORD&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrpl_1_1_fr_thread.html#a9b062f2316b855d4311430cce0646174">ThreadMemberFunc</a> ()=0</td></tr>
+<tr class="separator:a9b062f2316b855d4311430cce0646174 inherit pro_methods_classfrpl_1_1_fr_thread"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected 属性</h2></td></tr>
+<tr class="memitem:a31d91d2b4a991382760fe5c421671f3c"><td class="memItemLeft" align="right" valign="top">volatile int *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrpl_1_1_fr_h_thread.html#a31d91d2b4a991382760fe5c421671f3c">m_nHeartVar</a></td></tr>
+<tr class="separator:a31d91d2b4a991382760fe5c421671f3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f16d00f9c8a8747cb5428b8ae438c88"><td class="memItemLeft" align="right" valign="top">time_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrpl_1_1_fr_h_thread.html#a2f16d00f9c8a8747cb5428b8ae438c88">m_tLastTime</a></td></tr>
+<tr class="separator:a2f16d00f9c8a8747cb5428b8ae438c88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30b7b4039808fc0c881c9cc41342ade5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrpl_1_1_fr_h_thread.html#a30b7b4039808fc0c881c9cc41342ade5">m_nHeartPeriod</a></td></tr>
+<tr class="separator:a30b7b4039808fc0c881c9cc41342ade5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+额外继承的成员函数</h2></td></tr>
+<tr class="inherit_header pub_attribs_classfrpl_1_1_fr_thread"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_classfrpl_1_1_fr_thread')"><img src="closed.png" alt="-"/>&#160;Public 属性 继承自 <a class="el" href="classfrpl_1_1_fr_thread.html">frpl::FrThread</a></td></tr>
+<tr class="memitem:a78399fc224ee4838a723678a0cb99562 inherit pub_attribs_classfrpl_1_1_fr_thread"><td class="memItemLeft" align="right" valign="top">HANDLE&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrpl_1_1_fr_thread.html#a78399fc224ee4838a723678a0cb99562">m_hThread</a></td></tr>
+<tr class="separator:a78399fc224ee4838a723678a0cb99562 inherit pub_attribs_classfrpl_1_1_fr_thread"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80ea8eb18909047047d7c125dca5e880 inherit pub_attribs_classfrpl_1_1_fr_thread"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrpl_1_1_fr_thread.html#a80ea8eb18909047047d7c125dca5e880">m_bThreadRuning</a></td></tr>
+<tr class="separator:a80ea8eb18909047047d7c125dca5e880 inherit pub_attribs_classfrpl_1_1_fr_thread"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f835cbd677306031d57ee3969fcbb49 inherit pub_attribs_classfrpl_1_1_fr_thread"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrpl_1_1_fr_thread.html#a9f835cbd677306031d57ee3969fcbb49">m_bThreadTerminated</a></td></tr>
+<tr class="separator:a9f835cbd677306031d57ee3969fcbb49 inherit pub_attribs_classfrpl_1_1_fr_thread"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a092b2a1ec073b3106948c619b250b976 inherit pub_attribs_classfrpl_1_1_fr_thread"><td class="memItemLeft" align="right" valign="top">DWORD&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrpl_1_1_fr_thread.html#a092b2a1ec073b3106948c619b250b976">m_dwThreadID</a></td></tr>
+<tr class="separator:a092b2a1ec073b3106948c619b250b976 inherit pub_attribs_classfrpl_1_1_fr_thread"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8bac8e1e97356ebd60f01ac23aa34de1 inherit pub_attribs_classfrpl_1_1_fr_thread"><td class="memItemLeft" align="right" valign="top">HANDLE&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrpl_1_1_fr_thread.html#a8bac8e1e97356ebd60f01ac23aa34de1">m_hRequestExitEvent</a></td></tr>
+<tr class="separator:a8bac8e1e97356ebd60f01ac23aa34de1 inherit pub_attribs_classfrpl_1_1_fr_thread"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>心跳线程 </p>
+<p>增加了心跳机制的线程。在线程启动前，在外部调用SetHeartBeatVar设置心跳变量 <br/>
+ 之后每轮循环会自动向心跳变量中加1 <br/>
+ 外部程序可在访问完心跳后立即将值归零 <br/>
+ 该线程的使用方法与FrThread一样，新线程可直接继承心跳线程 <br/>
+</p>
+<p>[多线程安全]：是 <br/>
+ [跨平台]： 否 <br/>
+ [依赖库]：无 <br/>
+</p>
+<dl class="section author"><dt>作者</dt><dd>wangyb </dd></dl>
+</div><h2 class="groupheader">成员函数说明</h2>
+<a class="anchor" id="ad8acb903525043011e3af8065d0604ac"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void frpl::FrHThread::SetHeartBeatPeriod </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>seconds</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>设置心跳周期 </p>
+
+</div>
+</div>
+<a class="anchor" id="ac837404cc6cf9c330ca8174631fba45d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void frpl::FrHThread::SetHeartBeatVar </td>
+          <td>(</td>
+          <td class="paramtype">volatile int *&#160;</td>
+          <td class="paramname"><em>heartVar</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>设置心跳变量 </p>
+
+</div>
+</div>
+<a class="anchor" id="aee22bc42d18f718318ea0d9083f52a07"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacefrpl.html#ac7d1e22d112745e079cb6c53bcefd17d">FrErrCode</a> frpl::FrHThread::StartThread </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>创建线程 </p>
+
+</div>
+</div>
+<a class="anchor" id="ad571b0ba93a384bb6d091df8175c9e6a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static DWORD WINAPI frpl::FrHThread::ThreadFuncHeart </td>
+          <td>(</td>
+          <td class="paramtype">LPVOID&#160;</td>
+          <td class="paramname"><em>param</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>静态线程实例函数 </p>
+
+</div>
+</div>
+<a class="anchor" id="ad4da8a78fae3f78c30ee566ec2e4d37e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void frpl::FrHThread::UpdateHeartBeat </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>心跳发送函数 </p>
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a class="anchor" id="a30b7b4039808fc0c881c9cc41342ade5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int frpl::FrHThread::m_nHeartPeriod</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>心跳周期，单位为秒。默认2秒 </p>
+
+</div>
+</div>
+<a class="anchor" id="a31d91d2b4a991382760fe5c421671f3c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">volatile int* frpl::FrHThread::m_nHeartVar</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>心跳变量地址。默认为空。若地址为空，则不更新心跳 </p>
+
+</div>
+</div>
+<a class="anchor" id="a2f16d00f9c8a8747cb5428b8ae438c88"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">time_t frpl::FrHThread::m_tLastTime</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>上一次更新心跳的时间 </p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>frpl/core/<a class="el" href="_multi_thread_8h_source.html">MultiThread.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2014年 八月 12日 星期二 16:59:04 , 为 FRPL(freative program library)使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.2
+</small></address>
+</body>
+</html>
